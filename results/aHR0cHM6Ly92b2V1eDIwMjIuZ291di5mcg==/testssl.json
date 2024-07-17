@@ -227,7 +227,7 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -367,7 +367,7 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "270 >= 60 days"
+              "finding"      : "143 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -422,8 +422,8 @@
               "id"           : "cert_ocspRevoked",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "not revoked"
+              "severity"     : "CRITICAL",
+              "finding"      : "revoked"
           }
 ,         {
               "id"           : "cert_mustStapleExtension",
@@ -1021,59 +1021,66 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "100"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "30"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "key_exchange_score",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "100"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "30"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "cipher_strength_score",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "90"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "36"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "final_score",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "96"
+              "finding"      : "0"
           }
 ,         {
               "id"           : "overall_grade",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "A"
+              "severity"     : "CRITICAL",
+              "finding"      : "T"
           }
 ,         {
               "id"           : "grade_cap_reason_1",
+              "ip"           : "voeux2022.gouv.fr/217.70.184.55",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to T. Certificate revoked"
+          }
+,         {
+              "id"           : "grade_cap_reason_2",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1084,6 +1091,6 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "54"
+              "finding"      : "98"
           }
 ]
