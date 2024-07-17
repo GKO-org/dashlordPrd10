@@ -262,7 +262,7 @@
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "047FC43EA3ACDB0DCE9EAB00A47AD53F9859"
+              "finding"      : "04C3F15FBDBCAB0CFECF6AC9059636B8EBB0"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5EB7A475FF9A353604BC908E84002CFD7DD3C059"
+              "finding"      : "FCD7D350EEEB4710374A830A9E67E9AACFCA854B"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "40F695C0C4C420A3585FF0835E1733CAF3B54F80C17989832A3AC695DF56DB54"
+              "finding"      : "12A66A99C8B64CF1C646360229676F7801572D1D50188A084AF7991A9641FFB2"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFnjCCBIagAwIBAgISBH/EPqOs2w3OnqsApHrVP5hZMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDAxMDkwNzEyMzZaFw0yNDA0MDgwNzEyMzVaMBcxFTATBgNVBAMTDGluc3AuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKYgcTBi4b93pRY3fSfzRWbjb9tXs9OMXMKGOqziR6mztjpMAf6qhF+etA8ZzRSyz/7qvNxR4qf/C0+dIOwpLpcbSpgthebyY52vu/5xuY/dhA2XnySWYpkVaKnAkJwbsAlbuhDHeK8R8H3WX6FBDE4/lRcZL4xRsCu2NKTlZIxQVCydB/G+sZPJrJDNH1K7vPCpJ2NzUTMQB9Sz0mishpSOM/RiQ6m2gNKcmol57uzKMSAMfd8nR5j4QuLcolhH+lbw6+wdsoJSFBiqKfRHGbbDKQA3kFOTVXKpTrksDdD1/lMkbKdlBKlE6VPHBkjJemBeeMr9fmJkzU0TVLWZ/L8CAwEAAaOCAscwggLDMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUBucS8nTOJSDIppMP8mpxe6aYtZ0wHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wgdAGA1UdEQSByDCBxYIUaW4tc2VydmljZS1wdWJsaWMuZnKCCGluLXNwLmZyggxpbnNwLmdvdXYuZnKCI2luc3RpdHV0LW5hdGlvbmFsLXNlcnZpY2UtcHVibGljLmZygiJpbnN0aXR1dG5hdGlvbmFsZHVzZXJ2aWNlcHVibGljLmZygiBpbnN0aXR1dG5hdGlvbmFsc2VydmljZXB1YmxpYy5mcoIYaW5zdGl0dXRzZXJ2aWNlcHVibGljLmZyghB3d3cuaW5zcC5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYASLDja9qmRzQP5WoC+p0w6xxSActW3SyB2bu/qznYhHMAAAGM7UfT9AAABAMARzBFAiBRH8yYjsNa83SWedvcxrtg4qUutgBNgQciL0Fwij3ieQIhAKzgoebf3fySVVjmwbFr9P+9nqaRKU3hrQrAtmNuLqurAHUA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGM7UfT/QAABAMARjBEAiA368R6FollcqkudFOyFkVky7tnswGSk4Jm5OVkDsaZSQIgUTGCEFwipLChMZimujx5aC7jErGndcDML47x8NH/Z6owDQYJKoZIhvcNAQELBQADggEBAKosooAr/eeLmLQpuOFyfkYpql4x48ObbyGknwQD+YKXY3GSj4xtHtZuYTVkVV70tuNgZGeSoPrJnx+5t3B6Rm8IfP51WsVqMKPZ0PSZEDHo1aplxOh4cDn0v8OKcZQNDEUskGM3H9cDEv4P1wRxzK8+bPP3P+uwWdG5zuBMsn7sN0pWy33aU6uarTw+GShI7FgmlPtg3sNh6h1Nt47tVutX+9wUYTfrDVH0nIXjaWy4GpVhBoYkfNTfYs2S+iRp328VhPOHR84MGJlmdmw7hCNCFXV95zZRj/PwGv107EqRhTEPnjC+p4u02z0/QHHG/P6m0gD4ToUmL8n+lsdC6Ew=\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\nMIIFoDCCBIigAwIBAgISBMPxX728qwz+z2rJBZY2uOuwMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJSMzAeFw0yNDA1MjgwNzAzMjBaFw0yNDA4MjYwNzAzMTlaMBcxFTATBgNVBAMTDGluc3AuZ291di5mcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIf/preLjemedSmZoAaqOcU2wc6pY7XYohIYoVyyb+MvDadJJfaIfI6wizgclvHIYa/vNtOy22AhdCXfNvOEx8gOURtRe8XT/C3TdgK9V0eY7brf3SEC95620xPrFhBQI34acAUww9GS+wztYrMMneroAhoIzrmqnSl77nD/OQ8gfiefzaCkvlNZFbh9edwuDMGBX0jHi/IVgxmeKda46eWQa4BkYjgnxPcWCPzgASCQGky3At80uRL/LtswuZeq1SsJ/SHecPQICZt+UyTCFConNeOp+75ismcJSlR81IRjknZNmHLFmd3JiFm9cc7zj+LvIGmlKMY1iwnRp+pCX28CAwEAAaOCAskwggLFMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU46QGHY28KthPExVpfZcxV2qKLjYwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+vnYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5sZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wgdAGA1UdEQSByDCBxYIUaW4tc2VydmljZS1wdWJsaWMuZnKCCGluLXNwLmZyggxpbnNwLmdvdXYuZnKCI2luc3RpdHV0LW5hdGlvbmFsLXNlcnZpY2UtcHVibGljLmZygiJpbnN0aXR1dG5hdGlvbmFsZHVzZXJ2aWNlcHVibGljLmZygiBpbnN0aXR1dG5hdGlvbmFsc2VydmljZXB1YmxpYy5mcoIYaW5zdGl0dXRzZXJ2aWNlcHVibGljLmZyghB3d3cuaW5zcC5nb3V2LmZyMBMGA1UdIAQMMAowCAYGZ4EMAQIBMIIBBQYKKwYBBAHWeQIEAgSB9gSB8wDxAHcA7s3QZNXbGs7FXLedtM0TojKHRny87N7DUUhZRnEftZsAAAGPvjmnaAAABAMASDBGAiEAoq0gq+RD+/Af6IettI9oOdsbx9MygQE7MekmPWtsDHkCIQC4DVTRpO+3xGbpl26k1QGRcGqhweir4RXTZ1CVJ8l+jgB2ABmYEHEJ8NZSLjCA0p4/ZLuDbijM+Q9Sju7fzko/FrTKAAABj745p6wAAAQDAEcwRQIgRB41265UwlKfPnUrqjSpAtnwWtrRxxP7oM2fgghWDF0CIQCR3zjCeoplz4z4QDtv/tuj5TXlU8kkcFo3JLX5lpcsbDANBgkqhkiG9w0BAQsFAAOCAQEAO2cg+pnTv8EgzzFHou4wFHl1T68jBm8hS5F39BIAvi4125W1M6pNhTBEAcxfxGe3qwhip/Oo1Q/vIB6ZPCIyzYieh/ofevcPjepA98C8FReHupslQMHBjysNGlmUcZbxfqN+Tqj+RQ48PPpBd/2JjJGqWgeSe7Zs1mx7MrukbQIh+Nm0ukIdgZhviegUgrvSZdrBX+R4xVLs83ujNjMF6EB68+GIF1MUGWUB29p4MTssEq9p6V0JHmywq10DlPnw4cHL+TxYGcD7NttWH5px25LxW2O8++Q6w0t/idVvyIg+LbIbcAZ1sJrQifFoWyBg67kfZuinHA6sXmhdQPXb5g==\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 30 days (26)"
+              "severity"     : "OK",
+              "finding"      : "39 >= 30 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-01-09 07:12"
+              "finding"      : "2024-05-28 07:03"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2024-04-08 07:12"
+              "severity"     : "OK",
+              "finding"      : "2024-08-26 07:03"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -535,14 +535,14 @@
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0 seconds from localtime"
+              "finding"      : "-1 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710238023"
+              "finding"      : "1721230312"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -772,7 +772,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=40F695C0C4C420A3585FF0835E1733CAF3B54F80C17989832A3AC695DF56DB54"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=12A66A99C8B64CF1C646360229676F7801572D1D50188A084AF7991A9641FFB2"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1148,6 +1148,6 @@
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "44"
+              "finding"      : "46"
           }
 ]
