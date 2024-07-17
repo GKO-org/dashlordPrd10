@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az1567-60:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az711-557:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2024-03-12 10:35:37                --&gt;&gt; 87.98.148.216:443 (vigipirate.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2024-07-17 15:56:23                --&gt;&gt; 87.98.148.216:443 (vigipirate.gouv.fr) &lt;&lt;--</span>
 
  rDNS (87.98.148.216):   vigipirate.gouv.fr.
  Service detected:       HTTP
@@ -98,18 +98,18 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> TLS clock skew</span>               Random values, no fingerprinting possible 
 <span style="font-weight:bold;"> Client Authentication        </span>none
 <span style="font-weight:bold;"> Signature Algorithm          </span><span style="color:#008817;">SHA256 with RSA</span>
-<span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
+<span style="font-weight:bold;"> Server key size              </span>RSA <span style="color:#008817;">3072</span> bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>E6FF4BDCBBD4E085B145781FC3377A53 (OK: length 16)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 631C735C78EF1B1E7C61AB5E950AB2F4475AF9C7
-                              SHA256 59810B8A78B4EAB5BDEE6C437199DFB69B5721C0300C397175C61A684420DFAD
+<span style="font-weight:bold;"> Serial                       </span>163AE8D06D017AC63A61FE0AB0901E99 (OK: length 16)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 FD25870C18D26F58AFD4DD87F5E41A966EBFD8EC
+                              SHA256 7C2CBCC29C4A7FB0DCCB85C681E93AD27DFDCA14F39E45602B6F3B34291350A6
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>vigipirate.gouv.fr </i>
 <span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>vigipirate.gouv.fr www.vigipirate.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (same w/o SNI)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">272 &gt;= 60 days</span> (2023-12-10 23:00 --&gt; 2024-12-09 22:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">144 &gt;= 60 days</span> (2024-03-24 23:00 --&gt; 2024-12-08 22:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.certigna.fr/servicesca.crl
                               http://crl.dhimyotis.com/servicesca.crl
@@ -128,7 +128,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="text-decoration:underline;font-weight:bold;"> Testing HTTP header response @ &quot;/&quot; </span>
 
 <span style="font-weight:bold;"> HTTP Status Code           </span>  200 OK
-<span style="font-weight:bold;"> HTTP clock skew              </span>0 sec from localtime
+<span style="font-weight:bold;"> HTTP clock skew              </span>-1 sec from localtime
 <span style="font-weight:bold;"> Strict Transport Security    </span><span style="color:#008817;">730 days</span>=63072000 s<span style="color:#168092;">, just this domain</span>
 <span style="font-weight:bold;"> Public Key Pinning           </span>--
 <span style="font-weight:bold;"> Server banner                </span>Apache
@@ -164,8 +164,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=59810B8A78B4EAB5BDEE6C437199DFB69B5721C0300C397175C61A684420DFAD" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=59810B8A78B4EAB5BDEE6C437199DFB69B5721C0300C397175C61A684420DFAD</a>
-<span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      common prime with 2048 bits detected: <i>RFC3526/Oakley Group 14</i> (<span style="color:#008817;">2048 bits</span>),
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7C2CBCC29C4A7FB0DCCB85C681E93AD27DFDCA14F39E45602B6F3B34291350A6" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=7C2CBCC29C4A7FB0DCCB85C681E93AD27DFDCA14F39E45602B6F3B34291350A6</a>
+<span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      common prime with 3072 bits detected: <i>RFC3526/Oakley Group 15</i> (<span style="color:#008817;">3072 bits</span>),
                                            but no DH EXPORT ciphers
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     potentially <span style="color:#a86437;">VULNERABLE</span>, uses cipher block chaining (CBC) ciphers with TLS. Check patches
@@ -191,8 +191,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  IE 6 XP                      No connection
  IE 8 Win 7                   No connection
  IE 8 XP                      No connection
- IE 11 Win 7                  TLSv1.2   DHE-RSA-AES128-GCM-SHA256         <span style="color:#008817;">2048 bit DH  </span>
- IE 11 Win 8.1                TLSv1.2   DHE-RSA-AES128-GCM-SHA256         <span style="color:#008817;">2048 bit DH  </span>
+ IE 11 Win 7                  TLSv1.2   DHE-RSA-AES128-GCM-SHA256         <span style="color:#008817;">3072 bit DH  </span>
+ IE 11 Win 8.1                TLSv1.2   DHE-RSA-AES128-GCM-SHA256         <span style="color:#008817;">3072 bit DH  </span>
  IE 11 Win Phone 8.1          TLSv1.2   ECDHE-RSA-AES128-SHA256           <span style="color:#008817;">256 bit ECDH (P-256)</span>
  IE 11 Win 10                 TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Edge 15 Win 10               TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
@@ -224,7 +224,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Final Score                  </span>81
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A+</span>
 
-<span style="color:white;background-color:black;"> Done 2024-03-12 10:37:56 [ 142s] --&gt;&gt; 87.98.148.216:443 (vigipirate.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2024-07-17 15:58:43 [ 142s] --&gt;&gt; 87.98.148.216:443 (vigipirate.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>

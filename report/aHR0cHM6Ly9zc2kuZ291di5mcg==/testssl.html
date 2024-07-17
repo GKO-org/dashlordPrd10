@@ -21,11 +21,11 @@
 ###########################################################</span>
 
  Using &quot;OpenSSL 1.0.2-bad (1.0.2k-dev)&quot; [~183 ciphers]
- on fv-az1426-611:/home/testssl/bin/openssl.Linux.x86_64
+ on fv-az1019-743:/home/testssl/bin/openssl.Linux.x86_64
  (built: &quot;Sep  1 14:03:44 2022&quot;, platform: &quot;linux-x86_64&quot;)
 
 
-<span style="color:white;background-color:black;"> Start 2024-03-12 10:20:49                --&gt;&gt; 193.70.123.152:443 (ssi.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Start 2024-07-17 15:49:30                --&gt;&gt; 193.70.123.152:443 (ssi.gouv.fr) &lt;&lt;--</span>
 
  rDNS (193.70.123.152):  ip152.ip-193-70-123.eu.
  Service detected:       HTTP
@@ -84,9 +84,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> TLS extensions (standard)    </span>&quot;renegotiation info/#65281&quot; &quot;server name/#0&quot;
                               &quot;EC point formats/#11&quot; &quot;session ticket/#35&quot;
                               &quot;supported versions/#43&quot; &quot;key share/#51&quot;
-                              &quot;supported_groups/#10&quot; &quot;max fragment length/#1&quot;
-                              &quot;application layer protocol negotiation/#16&quot;
-                              &quot;extended master secret/#23&quot;
+                              &quot;supported_groups/#10&quot;
 <span style="font-weight:bold;"> Session Ticket RFC 5077 hint </span>300 seconds, session tickets keys seems to be rotated &lt; daily
 <span style="font-weight:bold;"> SSL Session ID support       </span>yes
 <span style="font-weight:bold;"> Session Resumption           </span>Tickets: yes, ID: yes
@@ -94,18 +92,18 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Certificate Compression      </span>none
 <span style="font-weight:bold;"> Client Authentication        </span>none
 <span style="font-weight:bold;"> Signature Algorithm          </span><span style="color:#008817;">SHA256 with RSA</span>
-<span style="font-weight:bold;"> Server key size              </span>RSA 2048 bits (exponent is 65537)
+<span style="font-weight:bold;"> Server key size              </span>RSA <span style="color:#008817;">3072</span> bits (exponent is 65537)
 <span style="font-weight:bold;"> Server key usage             </span>Digital Signature, Key Encipherment
 <span style="font-weight:bold;"> Server extended key usage    </span>TLS Web Server Authentication
-<span style="font-weight:bold;"> Serial                       </span>322E80AFD980921193606602B874BC18 (OK: length 16)
-<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 7BD929A703F51EF693C0CB0906E266CD163D5D12
-                              SHA256 BD6A314C4AAD8675C960592AD6E6DCFD20F2F56DF1821E226FFACF7BFBFD1335
+<span style="font-weight:bold;"> Serial                       </span>0C9DBBFF9BC4534BE6500B46F067BD02 (OK: length 16)
+<span style="font-weight:bold;"> Fingerprints                 </span>SHA1 D5DD2A7EDD9C39DAC9F8B659A24010D95152A7F5
+                              SHA256 4D23C324C6DFAF4D3110208041565F179D69A4A8A00D3FD1F981D6D88FA454F9
 <span style="font-weight:bold;"> Common Name (CN)             </span><i>ssi.gouv.fr </i> (CN in response to request w/o SNI: <i>cyber.gouv.fr </i>)
-<span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>archives.ssi.gouv.fr www.ssi.gouv.fr ssi.gouv.fr </i>
+<span style="font-weight:bold;"> subjectAltName (SAN)         </span><i>archives.ssi.gouv.fr ssi.gouv.fr www.ssi.gouv.fr </i>
 <span style="font-weight:bold;"> Trust (hostname)             </span><span style="color:#008817;">Ok via SAN and CN</span> (SNI mandatory)
 <span style="font-weight:bold;"> Chain of trust</span>               <span style="color:#008817;">Ok   </span><span style="color:#cd00cd;"></span>
 <span style="font-weight:bold;"> EV cert</span> (experimental)       no 
-<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">191 &gt;= 60 days</span> (2023-09-20 22:00 --&gt; 2024-09-19 21:59)
+<span style="font-weight:bold;"> Certificate Validity (UTC)   </span><span style="color:#008817;">63 &gt;= 60 days</span> (2024-03-24 23:00 --&gt; 2024-09-18 21:59)
 <span style="font-weight:bold;"> ETS/&quot;eTLS&quot;</span>, visibility info  not present
 <span style="font-weight:bold;"> Certificate Revocation List  </span>http://crl.dhimyotis.com/servicesca.crl
                               http://crl.certigna.fr/servicesca.crl
@@ -151,7 +149,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> FREAK</span> (CVE-2015-0204)                     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
 <span style="font-weight:bold;"> DROWN</span> (CVE-2016-0800, CVE-2016-0703)      <span style="color:#008817;font-weight:bold;">not vulnerable on this host and port (OK)</span>
                                            make sure you don&apos;t use this certificate elsewhere with SSLv2 enabled services, see
-                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BD6A314C4AAD8675C960592AD6E6DCFD20F2F56DF1821E226FFACF7BFBFD1335" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=BD6A314C4AAD8675C960592AD6E6DCFD20F2F56DF1821E226FFACF7BFBFD1335</a>
+                                           <a href="https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=4D23C324C6DFAF4D3110208041565F179D69A4A8A00D3FD1F981D6D88FA454F9" style="color:black;text-decoration:none;">https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=4D23C324C6DFAF4D3110208041565F179D69A4A8A00D3FD1F981D6D88FA454F9</a>
 <span style="font-weight:bold;"> LOGJAM</span> (CVE-2015-4000), experimental      <span style="color:#008817;">not vulnerable (OK):</span> no DH EXPORT ciphers, no DH key detected with &lt;= TLS 1.2
 <span style="font-weight:bold;"> BEAST</span> (CVE-2011-3389)                     <span style="color:#008817;">not vulnerable (OK)</span>, no SSL3 or TLS1
 <span style="font-weight:bold;"> LUCKY13</span> (CVE-2013-0169), experimental     <span style="color:#008817;font-weight:bold;">not vulnerable (OK)</span>
@@ -163,7 +161,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 
  Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward Secrecy
 ------------------------------------------------------------------------------------------------
- Android 6.0                  TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256       <span style="color:#008817;">256 bit ECDH (P-256)</span>
+ Android 6.0                  No connection
  Android 7.0 (native)         TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Android 8.1 (native)         TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Android 9.0 (native)         TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
@@ -183,8 +181,8 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
  IE 11 Win 10                 TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
  Edge 15 Win 10               TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Edge 101 Win 10 21H2         TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Safari 12.1 (iOS 12.2)       TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
- Safari 13.0 (macOS 10.14.6)  TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
+ Safari 12.1 (iOS 12.2)       No connection
+ Safari 13.0 (macOS 10.14.6)  No connection
  Safari 15.4 (macOS 12.3.1)   TLSv1.3   TLS_AES_256_GCM_SHA384            <span style="color:#008817;">253 bit ECDH (X25519)</span>
  Java 7u25                    No connection
  Java 8u161                   TLSv1.2   ECDHE-RSA-AES256-GCM-SHA384       <span style="color:#008817;">256 bit ECDH (P-256)</span>
@@ -211,7 +209,7 @@ Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Ciphe
 <span style="font-weight:bold;"> Overall Grade                </span><span style="color:#008817;font-weight:bold;">A</span>
 <span style="font-weight:bold;"> Grade cap reasons            </span>Grade capped to A. HSTS is not offered
 
-<span style="color:white;background-color:black;"> Done 2024-03-12 10:22:26 [  99s] --&gt;&gt; 193.70.123.152:443 (ssi.gouv.fr) &lt;&lt;--</span>
+<span style="color:white;background-color:black;"> Done 2024-07-17 15:51:04 [  96s] --&gt;&gt; 193.70.123.152:443 (ssi.gouv.fr) &lt;&lt;--</span>
 
 
 </pre>
