@@ -262,7 +262,7 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5B27910AC9929CAEF1468DA7C1E08FFF"
+              "finding"      : "52FBA0C0AFEB24BDB019F4AD3E66CCCC"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2C5B1D29D967EF55C9785786264542C924CEB322"
+              "finding"      : "81F1EE7402A0F1FBBA8A2AA5995BAD17B23ECADF"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "5F8247BF54065E1483C5C4867679C032FB86E3D944BFE78900BA9DA54A88F474"
+              "finding"      : "EE7BF0390CCFFB966CD35DAC4E0F47FE8A46486C4BC25E6C71E8199C6431FDAC"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -311,7 +311,7 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "www.systeme-de-design.gouv.fr systeme-de-design.gouv.fr"
+              "finding"      : "systeme-de-design.gouv.fr www.systeme-de-design.gouv.fr"
           }
 ,         {
               "id"           : "cert_trust",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (37)"
+              "severity"     : "OK",
+              "finding"      : "252 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-04-19 22:00"
+              "finding"      : "2024-03-26 23:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2024-04-18 21:59"
+              "severity"     : "OK",
+              "finding"      : "2025-03-26 22:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -493,21 +493,21 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+112 seconds from localtime"
+              "finding"      : "+283 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710238196"
+              "finding"      : "1721230723"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "113 seconds"
+              "finding"      : "284 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -578,7 +578,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "X-Varnish: 2782742 2782686X-Cache: HITX-Cache-Hits: 9"
+              "finding"      : "X-Varnish: 5494509 3253336X-Cache: HITX-Cache-Hits: 11"
           }
 ,         {
               "id"           : "heartbleed",
@@ -701,7 +701,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=5F8247BF54065E1483C5C4867679C032FB86E3D944BFE78900BA9DA54A88F474"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=EE7BF0390CCFFB966CD35DAC4E0F47FE8A46486C4BC25E6C71E8199C6431FDAC"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1084,6 +1084,6 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "91"
+              "finding"      : "100"
           }
 ]
