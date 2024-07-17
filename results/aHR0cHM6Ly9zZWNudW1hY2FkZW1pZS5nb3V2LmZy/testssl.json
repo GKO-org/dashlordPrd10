@@ -38,8 +38,8 @@
               "id"           : "TLS1_1",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "LOW",
-              "finding"      : "offered (deprecated)"
+              "severity"     : "INFO",
+              "finding"      : "not offered"
           }
 ,         {
               "id"           : "TLS1_2",
@@ -125,20 +125,6 @@
               "finding"      : "offered"
           }
 ,         {
-              "id"           : "cipher_order-tls1_1",
-              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
-              "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "server"
-          }
-,         {
-              "id"           : "cipherorder_TLSv1_1",
-              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES256-SHA"
-          }
-,         {
               "id"           : "cipher_order-tls1_2",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
@@ -171,7 +157,7 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
+              "finding"      : "DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES128-SHA256 DHE-RSA-AES128-SHA DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES256-SHA256 DHE-RSA-AES256-SHA DHE-RSA-CAMELLIA128-SHA DHE-RSA-CAMELLIA256-SHA DHE-RSA-SEED-SHA ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA"
           }
 ,         {
               "id"           : "FS_ECDHE_curves",
@@ -220,7 +206,7 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "off by -1 seconds from your localtime"
+              "finding"      : "random"
           }
 ,         {
               "id"           : "cert_compression",
@@ -352,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "160 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (33)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -366,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-08-19 21:59"
           }
 ,         {
@@ -465,14 +451,14 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-443 seconds from localtime"
+              "finding"      : "-505 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1710237506"
+              "finding"      : "1721229817"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -658,7 +644,7 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "supported"
+              "finding"      : "no protocol below TLS 1.2 offered"
           }
 ,         {
               "id"           : "SWEET32",
@@ -697,6 +683,15 @@
               "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=98A564827660AA379C6E48160CCE8F4A8C892329F046616CA8576EC47FAE2F75"
           }
 ,         {
+              "id"           : "LOGJAM-common_primes",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "cve"          : "CVE-2015-4000",
+              "cwe"          : "CWE-310",
+              "finding"      : "HAProxy"
+          }
+,         {
               "id"           : "LOGJAM",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
@@ -704,15 +699,6 @@
               "cve"          : "CVE-2015-4000",
               "cwe"          : "CWE-310",
               "finding"      : "not vulnerable, no DH EXPORT ciphers,"
-          }
-,         {
-              "id"           : "LOGJAM-common_primes",
-              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
-              "port"         : "443",
-              "severity"     : "OK",
-              "cve"          : "CVE-2015-4000",
-              "cwe"          : "CWE-310",
-              "finding"      : "no DH key with <= TLS 1.2"
           }
 ,         {
               "id"           : "BEAST",
@@ -1073,17 +1059,10 @@
               "finding"      : "Grade capped to T. Issues with the chain of trust (chain incomplete)"
           }
 ,         {
-              "id"           : "grade_cap_reason_2",
-              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to B. TLS 1.1 offered"
-          }
-,         {
               "id"           : "scanTime",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "54"
+              "finding"      : "91"
           }
 ]
