@@ -240,8 +240,8 @@
               "id"           : "cert_keySize",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "RSA 2048 bits (exponent is 65537)"
+              "severity"     : "OK",
+              "finding"      : "RSA 3072 bits (exponent is 65537)"
           }
 ,         {
               "id"           : "cert_keyUsage",
@@ -255,14 +255,14 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "TLS Web Client Authentication, TLS Web Server Authentication"
+              "finding"      : "TLS Web Server Authentication"
           }
 ,         {
               "id"           : "cert_serialNumber",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "250A531F186DE69120E9BC439C7DFBD9"
+              "finding"      : "E053D59A749FF0942D661A07CC43708E"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "4B4E79AA0644360AF60AE34098BC5EF24E3B4940"
+              "finding"      : "CC2B87004065D913997BB39668EFD68C941F550A"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "98A564827660AA379C6E48160CCE8F4A8C892329F046616CA8576EC47FAE2F75"
+              "finding"      : "1F6F30DD2272980191766F1662CBBFDC43F3B2642268C3A6C403900129C79BDF"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -311,7 +311,7 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "secnumacademie.gouv.fr www.secnumacademie.gouv.fr"
+              "finding"      : "www.secnumacademie.gouv.fr secnumacademie.gouv.fr"
           }
 ,         {
               "id"           : "cert_trust",
@@ -324,8 +324,8 @@
               "id"           : "cert_chain_of_trust",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "CRITICAL",
-              "finding"      : "failed (chain incomplete)."
+              "severity"     : "OK",
+              "finding"      : "passed."
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (33)"
+              "severity"     : "OK",
+              "finding"      : "352 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2023-08-20 22:00"
+              "finding"      : "2024-08-01 22:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2024-08-19 21:59"
+              "severity"     : "OK",
+              "finding"      : "2025-08-01 21:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -374,14 +374,14 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://crl.certigna.fr/wildca.crl http://crl.dhimyotis.com/wildca.crl"
+              "finding"      : "http://crl.certigna.fr/servicesca.crl http://crl.dhimyotis.com/servicesca.crl"
           }
 ,         {
               "id"           : "cert_ocspURL",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://wildca.ocsp.dhimyotis.com http://wildca.ocsp.certigna.fr"
+              "finding"      : "http://servicesca.ocsp.certigna.fr http://servicesca.ocsp.dhimyotis.com"
           }
 ,         {
               "id"           : "OCSP_stapling",
@@ -416,7 +416,7 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1"
+              "finding"      : "2"
           }
 ,         {
               "id"           : "certs_list_ordering_problem",
@@ -430,7 +430,49 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Certigna Wild CA (DHIMYOTIS from FR)"
+              "finding"      : "Certigna Services CA (DHIMYOTIS from FR)"
+          }
+,         {
+              "id"           : "intermediate_cert <#1>",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+          }
+,         {
+              "id"           : "intermediate_cert_fingerprintSHA256 <#1>",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "71E653BFBF5E72515B4099BBD5EC8872812B47C6EC1FA9ADD327E1C92C9EA16D"
+          }
+,         {
+              "id"           : "intermediate_cert_notBefore <#1>",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "2015-11-25 11:33"
+          }
+,         {
+              "id"           : "intermediate_cert_notAfter <#1>",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "2025-11-22 11:33"
+          }
+,         {
+              "id"           : "intermediate_cert_expiration <#1>",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "OK",
+              "finding"      : "ok > 40 days"
+          }
+,         {
+              "id"           : "intermediate_cert_chain <#1>",
+              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Certigna Services CA <-- Certigna"
           }
 ,         {
               "id"           : "intermediate_cert_badOCSP",
@@ -451,14 +493,14 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-505 seconds from localtime"
+              "finding"      : "-519 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1721229817"
+              "finding"      : "1723641590"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -680,7 +722,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=98A564827660AA379C6E48160CCE8F4A8C892329F046616CA8576EC47FAE2F75"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=1F6F30DD2272980191766F1662CBBFDC43F3B2642268C3A6C403900129C79BDF"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1000,69 +1042,62 @@
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "100"
           }
 ,         {
               "id"           : "protocol_support_score_weighted",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "30"
           }
 ,         {
               "id"           : "key_exchange_score",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "90"
           }
 ,         {
               "id"           : "key_exchange_score_weighted",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "27"
           }
 ,         {
               "id"           : "cipher_strength_score",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "60"
           }
 ,         {
               "id"           : "cipher_strength_score_weighted",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "24"
           }
 ,         {
               "id"           : "final_score",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "0"
+              "finding"      : "81"
           }
 ,         {
               "id"           : "overall_grade",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
-              "severity"     : "CRITICAL",
-              "finding"      : "T"
-          }
-,         {
-              "id"           : "grade_cap_reason_1",
-              "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
-              "port"         : "443",
-              "severity"     : "INFO",
-              "finding"      : "Grade capped to T. Issues with the chain of trust (chain incomplete)"
+              "severity"     : "OK",
+              "finding"      : "A+"
           }
 ,         {
               "id"           : "scanTime",
               "ip"           : "secnumacademie.gouv.fr/148.253.99.103",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "91"
+              "finding"      : "61"
           }
 ]
