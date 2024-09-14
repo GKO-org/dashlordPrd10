@@ -339,7 +339,7 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "224 >= 60 days"
+              "finding"      : "193 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -493,21 +493,21 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+194 seconds from localtime"
+              "finding"      : "+239 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1723642398"
+              "finding"      : "1726320827"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "194 seconds"
+              "finding"      : "239 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -578,7 +578,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "X-Varnish: 3668801 4146415X-Cache: HITX-Cache-Hits: 9"
+              "finding"      : "X-Varnish: 5113059 4678590X-Cache: HITX-Cache-Hits: 12"
           }
 ,         {
               "id"           : "heartbleed",
@@ -1084,6 +1084,6 @@
               "ip"           : "www.systeme-de-design.gouv.fr/160.92.148.78",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "56"
+              "finding"      : "90"
           }
 ]
