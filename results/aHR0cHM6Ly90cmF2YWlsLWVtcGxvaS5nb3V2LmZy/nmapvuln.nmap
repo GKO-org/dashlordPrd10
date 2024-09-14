@@ -1,84 +1,83 @@
-# Nmap 7.92 scan initiated Wed Aug 14 13:50:47 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln travail-emploi.gouv.fr
+# Nmap 7.92 scan initiated Sat Sep 14 13:48:32 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln travail-emploi.gouv.fr
 Nmap scan report for travail-emploi.gouv.fr (185.194.82.27)
-Host is up (0.097s latency).
+Host is up (0.082s latency).
 Not shown: 997 filtered tcp ports (no-response)
 PORT    STATE  SERVICE    VERSION
-80/tcp  open   http-proxy F5 BIG-IP load balancer http proxy
+80/tcp  open   tcpwrapped
 |_http-server-header: BigIP
 113/tcp closed ident
 443/tcp open   ssl/https
+|_http-trane-info: Problem with XML parsing of /evox/about
 | fingerprint-strings: 
 |   GetRequest: 
 |     HTTP/1.1 200 OK
-|     Date: Wed, 14 Aug 2024 13:51:07 GMT
-|     Link: <http://sante.gouv.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c.css?1722254912>;rel="preload";as="style"
+|     Date: Sat, 14 Sep 2024 13:48:52 GMT
+|     Link: <http://sante.gouv.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c.css?1724920098>;rel="preload";as="style"
 |     X-Spip-Cache: 21600
 |     X-Frame-Options: SAMEORIGIN
-|     Last-Modified: Wed, 14 Aug 2024 13:51:07 GMT
+|     Last-Modified: Sat, 14 Sep 2024 13:48:52 GMT
 |     Vary: Accept-Encoding
 |     X-Content-Type-Options: nosniff
 |     Connection: close
 |     Content-Type: text/html; charset=utf-8
-|     Set-Cookie: BIGipServerpool-dicom-portail-dares.cegedim.cloud-HTTP=!nqx+gcPxZtciKa1WDPlD0yXzT0UGhv4RSdbZKiBUNv2UZaqHwQDHqCKB95JFhrhAcrMqILY8NWfBFxhbwLiwIB7sO3zL; path=/; Httponly; Secure
+|     Set-Cookie: BIGipServerpool-dicom-portail-dares.cegedim.cloud-HTTP=!Lf4dYTzWEiaslMtWDPlD0yXzT0UGhpCeda4sjb2miAXhMZddQyTYwT65/cg+gwvlxd5aStyH72Ujpu0EEqO5/SlaUJtS; path=/; Httponly; Secure
 |     Strict-Transport-Security: max-age=31536000
-|     Set-Cookie: TS01f99fc7=01352d381190f7be196ad71d4246b9118f71f94cdf3868f838a71985dfde769ac760123db2b91388b8682c7d185a7351691fa6d3d4; Path=/
+|     Set-Cookie: TS01f99fc7=01352d381148d4b8fb5ddeced2cfaad7c6cfd27b47259823e650126541cddc5ebbf6e9f353af2d4c0407467aebe32c9495b08a4eb0; Path=/
 |     <!DOCTYPE HTML>
 |     <html class="page_sommaire ltr fr no-js" lang="fr" dir="ltr">
 |     <head>
 |     <script type='text/javascript'>/*<![CDATA[*/(funct
 |   HTTPOptions: 
 |     HTTP/1.1 200 OK
-|     Date: Wed, 14 Aug 2024 13:51:08 GMT
-|     Link: <http://sante.gouv.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c.css?1722254912>;rel="preload";as="style"
+|     Date: Sat, 14 Sep 2024 13:48:52 GMT
+|     Link: <http://sante.gouv.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c.css?1724920098>;rel="preload";as="style"
 |     X-Spip-Cache: 21600
 |     X-Frame-Options: SAMEORIGIN
-|     Last-Modified: Wed, 14 Aug 2024 13:51:08 GMT
+|     Last-Modified: Sat, 14 Sep 2024 13:48:52 GMT
 |     Vary: Accept-Encoding
 |     X-Content-Type-Options: nosniff
 |     Connection: close
 |     Content-Type: text/html; charset=utf-8
-|     Set-Cookie: BIGipServerpool-dicom-portail-dares.cegedim.cloud-HTTP=!IPGKSIWWgqRuF6ZWDPlD0yXzT0UGhn2KUgbB24wU0b1dxNlOPIxl92jotBufyyazCXUcJJmBDTCUyWz2xw4Vnoyrqf2o; path=/; Httponly; Secure
+|     Set-Cookie: BIGipServerpool-dicom-portail-dares.cegedim.cloud-HTTP=!ChBpVvIPMwF1VBxWDPlD0yXzT0UGhk/EOOxbXZxQyv4vsxjYOHFxqW6DBTiZB4ufDOFR/nF9lv1glpSfMPslo3c1xdA6; path=/; Httponly; Secure
 |     Strict-Transport-Security: max-age=31536000
-|     Set-Cookie: TS01f99fc7=01352d38119c4e8c1990749de0bc187ee62352e5abd08db50c9efcd8640054751208392e0ea2accfb68af96050d68d0422ce7aea4b; Path=/
+|     Set-Cookie: TS01f99fc7=01352d38116599bfa913ea000e19f19450369e841bc777c25f1d186ed2ff1c314d3dc436d9132f7ea728294a7379413fc7241c0bef; Path=/
 |     <!DOCTYPE HTML>
 |     <html class="page_sommaire ltr fr no-js" lang="fr" dir="ltr">
 |     <head>
 |_    <script type='text/javascript'>/*<![CDATA[*/(funct
-|_http-trane-info: Problem with XML parsing of /evox/about
 1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=8/14%Time=66BCB64C%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,39CA,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Wed,\x2014\
-SF:x20Aug\x202024\x2013:51:07\x20GMT\r\nLink:\x20<http://sante\.gouv\.fr:4
-SF:43/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c\.css\?1722254912>;r
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=9/14%Time=66E59444%P=x86_64-alpine-linux
+SF:-musl%r(GetRequest,399A,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Sat,\x2014\
+SF:x20Sep\x202024\x2013:48:52\x20GMT\r\nLink:\x20<http://sante\.gouv\.fr:4
+SF:43/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c\.css\?1724920098>;r
 SF:el=\"preload\";as=\"style\"\r\nX-Spip-Cache:\x2021600\r\nX-Frame-Option
-SF:s:\x20SAMEORIGIN\r\nLast-Modified:\x20Wed,\x2014\x20Aug\x202024\x2013:5
-SF:1:07\x20GMT\r\nVary:\x20Accept-Encoding\r\nX-Content-Type-Options:\x20n
+SF:s:\x20SAMEORIGIN\r\nLast-Modified:\x20Sat,\x2014\x20Sep\x202024\x2013:4
+SF:8:52\x20GMT\r\nVary:\x20Accept-Encoding\r\nX-Content-Type-Options:\x20n
 SF:osniff\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charse
 SF:t=utf-8\r\nSet-Cookie:\x20BIGipServerpool-dicom-portail-dares\.cegedim\
-SF:.cloud-HTTP=!nqx\+gcPxZtciKa1WDPlD0yXzT0UGhv4RSdbZKiBUNv2UZaqHwQDHqCKB9
-SF:5JFhrhAcrMqILY8NWfBFxhbwLiwIB7sO3zL;\x20path=/;\x20Httponly;\x20Secure\
+SF:.cloud-HTTP=!Lf4dYTzWEiaslMtWDPlD0yXzT0UGhpCeda4sjb2miAXhMZddQyTYwT65/c
+SF:g\+gwvlxd5aStyH72Ujpu0EEqO5/SlaUJtS;\x20path=/;\x20Httponly;\x20Secure\
 SF:r\nStrict-Transport-Security:\x20max-age=31536000\r\nSet-Cookie:\x20TS0
-SF:1f99fc7=01352d381190f7be196ad71d4246b9118f71f94cdf3868f838a71985dfde769
-SF:ac760123db2b91388b8682c7d185a7351691fa6d3d4;\x20Path=/\r\n\r\n<!DOCTYPE
+SF:1f99fc7=01352d381148d4b8fb5ddeced2cfaad7c6cfd27b47259823e650126541cddc5
+SF:ebbf6e9f353af2d4c0407467aebe32c9495b08a4eb0;\x20Path=/\r\n\r\n<!DOCTYPE
 SF:\x20HTML>\n<html\x20class=\"page_sommaire\x20ltr\x20fr\x20no-js\"\x20la
 SF:ng=\"fr\"\x20dir=\"ltr\">\n\t<head>\n\t\t<script\x20type='text/javascri
 SF:pt'>/\*<!\[CDATA\[\*/\(funct")%r(HTTPOptions,42FA,"HTTP/1\.1\x20200\x20
-SF:OK\r\nDate:\x20Wed,\x2014\x20Aug\x202024\x2013:51:08\x20GMT\r\nLink:\x2
+SF:OK\r\nDate:\x20Sat,\x2014\x20Sep\x202024\x2013:48:52\x20GMT\r\nLink:\x2
 SF:0<http://sante\.gouv\.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2e
-SF:ac044c\.css\?1722254912>;rel=\"preload\";as=\"style\"\r\nX-Spip-Cache:\
-SF:x2021600\r\nX-Frame-Options:\x20SAMEORIGIN\r\nLast-Modified:\x20Wed,\x2
-SF:014\x20Aug\x202024\x2013:51:08\x20GMT\r\nVary:\x20Accept-Encoding\r\nX-
+SF:ac044c\.css\?1724920098>;rel=\"preload\";as=\"style\"\r\nX-Spip-Cache:\
+SF:x2021600\r\nX-Frame-Options:\x20SAMEORIGIN\r\nLast-Modified:\x20Sat,\x2
+SF:014\x20Sep\x202024\x2013:48:52\x20GMT\r\nVary:\x20Accept-Encoding\r\nX-
 SF:Content-Type-Options:\x20nosniff\r\nConnection:\x20close\r\nContent-Typ
 SF:e:\x20text/html;\x20charset=utf-8\r\nSet-Cookie:\x20BIGipServerpool-dic
-SF:om-portail-dares\.cegedim\.cloud-HTTP=!IPGKSIWWgqRuF6ZWDPlD0yXzT0UGhn2K
-SF:UgbB24wU0b1dxNlOPIxl92jotBufyyazCXUcJJmBDTCUyWz2xw4Vnoyrqf2o;\x20path=/
+SF:om-portail-dares\.cegedim\.cloud-HTTP=!ChBpVvIPMwF1VBxWDPlD0yXzT0UGhk/E
+SF:OOxbXZxQyv4vsxjYOHFxqW6DBTiZB4ufDOFR/nF9lv1glpSfMPslo3c1xdA6;\x20path=/
 SF:;\x20Httponly;\x20Secure\r\nStrict-Transport-Security:\x20max-age=31536
-SF:000\r\nSet-Cookie:\x20TS01f99fc7=01352d38119c4e8c1990749de0bc187ee62352
-SF:e5abd08db50c9efcd8640054751208392e0ea2accfb68af96050d68d0422ce7aea4b;\x
+SF:000\r\nSet-Cookie:\x20TS01f99fc7=01352d38116599bfa913ea000e19f19450369e
+SF:841bc777c25f1d186ed2ff1c314d3dc436d9132f7ea728294a7379413fc7241c0bef;\x
 SF:20Path=/\r\n\r\n<!DOCTYPE\x20HTML>\n<html\x20class=\"page_sommaire\x20l
 SF:tr\x20fr\x20no-js\"\x20lang=\"fr\"\x20dir=\"ltr\">\n\t<head>\n\t\t<scri
 SF:pt\x20type='text/javascript'>/\*<!\[CDATA\[\*/\(funct");
-Service Info: Device: load balancer
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Aug 14 13:53:21 2024 -- 1 IP address (1 host up) scanned in 154.31 seconds
+# Nmap done at Sat Sep 14 13:51:08 2024 -- 1 IP address (1 host up) scanned in 155.84 seconds
