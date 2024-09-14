@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "63 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (32)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-10-16 21:59"
           }
 ,         {
@@ -500,21 +500,21 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+213 seconds from localtime"
+              "finding"      : "+107 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1723644765"
+              "finding"      : "1726323080"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "215 seconds"
+              "finding"      : "108 seconds"
           }
 ,         {
               "id"           : "HSTS",
