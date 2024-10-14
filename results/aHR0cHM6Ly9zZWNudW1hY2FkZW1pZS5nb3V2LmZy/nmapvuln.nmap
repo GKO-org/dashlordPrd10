@@ -1,6 +1,6 @@
-# Nmap 7.92 scan initiated Sat Sep 14 13:27:35 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln secnumacademie.gouv.fr
+# Nmap 7.92 scan initiated Mon Oct 14 13:33:51 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln secnumacademie.gouv.fr
 Nmap scan report for secnumacademie.gouv.fr (148.253.99.103)
-Host is up (0.081s latency).
+Host is up (0.082s latency).
 rDNS record for 148.253.99.103: ows-148-253-99-103.cloudgouv-eu-west-1.compute.outscale.com
 Not shown: 998 filtered tcp ports (no-response)
 PORT    STATE SERVICE        VERSION
@@ -10,7 +10,7 @@ PORT    STATE SERVICE        VERSION
 |   FourOhFourRequest: 
 |     HTTP/1.1 301 Moved Permanently
 |     server: nginx
-|     date: Sat, 14 Sep 2024 13:18:53 GMT
+|     date: Mon, 14 Oct 2024 13:24:54 GMT
 |     content-type: text/html
 |     content-length: 178
 |     keep-alive: timeout=25
@@ -30,7 +30,7 @@ PORT    STATE SERVICE        VERSION
 |   GetRequest, HTTPOptions: 
 |     HTTP/1.1 301 Moved Permanently
 |     server: nginx
-|     date: Sat, 14 Sep 2024 13:18:53 GMT
+|     date: Mon, 14 Oct 2024 13:24:54 GMT
 |     content-type: text/html
 |     content-length: 178
 |     keep-alive: timeout=25
@@ -57,13 +57,14 @@ PORT    STATE SERVICE        VERSION
 |     server returned an invalid or incomplete response.
 |_    </body></html>
 443/tcp open  ssl/http-proxy (bad gateway)
+|_http-server-header: nginx
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.1 404 Not Found
 |     server: nginx
 |     content-type: text/html; charset=UTF-8
 |     cache-control: no-cache, private
-|     date: Sat, 14 Sep 2024 13:19:00 GMT
+|     date: Mon, 14 Oct 2024 13:25:01 GMT
 |     strict-transport-security: max-age=31536000; includeSubDomains
 |     connection: close
 |     <!DOCTYPE html>
@@ -85,15 +86,15 @@ PORT    STATE SERVICE        VERSION
 |     server: nginx
 |     content-type: text/html; charset=UTF-8
 |     cache-control: private, must-revalidate
-|     date: Sat, 14 Sep 2024 13:18:59 GMT
+|     date: Mon, 14 Oct 2024 13:25:00 GMT
 |     pragma: no-cache
 |     expires: -1
-|     set-cookie: XSRF-TOKEN=eyJpdiI6ImEyKzdNalBqMHFTM2UwdXZBY0NUc1E9PSIsInZhbHVlIjoiUlNNRnlnbWRUSDE4SEo5Tmh1cmE3WUJBS214UHgxSzJiQ0dFWXN1MU5VMEtieHArZENZM0RQeW9td2ZpR3Q2WjNablZSQWhGTGk4MzBINXVpWFlzUnZKbFRMQXhoVGNLQ1wvcWRHZHp0cWV4UFFMUmtjVXZDYmxVNXlcL1k1bnE4YSIsIm1hYyI6IjJiNWQ2NmE2MGFiNTY0YTIzNjc4NWEyM2QwZWIxOGEzODQ1ZmJjYTNiN2EwODRlYjA4NDNlNzVjZmE5MzNhYTkifQ%3D%3D; expires=Sat, 14-Sep-2024 15:18:59 GMT; Max-Age=7200; path=/; domain=secnumacademie.gouv.fr; secure; samesite=lax
-|     set-cookie: laravel_session=eyJpdiI6ImJtbmVKcWxwOE9qbjVQTVQ4eUxMMlE9PSIsInZhbHVlIjoibGVYMVFidldZM2ZvRVlpOWZkNWhnTUlWcWJrRVVOdkh1XC9CUUJJNFJhdWdyRHpnTGpaRkdZUnBodGo4UlorOGVrRXFVM212dHBmWWI2VkhPYkxZMnZuZzRlQkNFN0NHWEpcL2NVTWpwZTBDa1Z5XC9aa0pXRVZE
+|     set-cookie: XSRF-TOKEN=eyJpdiI6Ijd2KzY0bm9mNmVxUmxcL3E5dUQwREhnPT0iLCJ2YWx1ZSI6IjdXbFhZTStnME1IdU9sRklkcFo3TXFrUm1rOEwyTzRHZGo3aHdPRENWVW9lK0gySVZQS29NbmF1aXV1Rm5HZGxcL3l5TlFxV2pCT2x5VnNacEFNS1JwM0E3anMrb1dCOTdGMmFrVTZqTkhPdDNHeVdBekFhZmRNVFg2YmJnMndCeiIsIm1hYyI6ImVjYjY2OTFmNjQ5NzA1ZWZmZDY4NjlmOWFlY2U0MzFjNWEwYThjMzg0MGQwZTQ4M2VlZDBkZTMyMTI1NDg3ZTkifQ%3D%3D; expires=Mon, 14-Oct-2024 15:25:00 GMT; Max-Age=7200; path=/; domain=secnumacademie.gouv.fr; secure; samesite=lax
+|     set-cookie: laravel_session=eyJpdiI6IjduUzRqRFpadFlsVGMzbHM4NVwvS0hBPT0iLCJ2YWx1ZSI6IkU5TnBTdmRydWJNR1cyRmY5MFhBenJqVmxjQUUycVVQeUVvbStWeko5dkgyek9wV2VaSVU3QVRKYU1lOEtMd1RjS0RLUlJiS1VFU1d1S1REeUF1V2tKRCs5OVhJcFR6RjNkWTJNa2k3WVwvYUxNbnF6RTVZWTZi
 |   HTTPOptions: 
 |     HTTP/1.1 405 Not Allowed
 |     server: nginx
-|     date: Sat, 14 Sep 2024 13:19:00 GMT
+|     date: Mon, 14 Oct 2024 13:25:01 GMT
 |     content-type: text/html; charset=utf-8
 |     content-length: 166
 |     keep-alive: timeout=25
@@ -106,88 +107,87 @@ PORT    STATE SERVICE        VERSION
 |     <hr><center>nginx</center>
 |     </body>
 |_    </html>
-|_http-server-header: nginx
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=9/14%Time=66E58F54%P=x86_64-alpine-linux-musl%r
-SF:(GetRequest,22B,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nserver:\x2
-SF:0nginx\r\ndate:\x20Sat,\x2014\x20Sep\x202024\x2013:18:53\x20GMT\r\ncont
-SF:ent-type:\x20text/html\r\ncontent-length:\x20178\r\nkeep-alive:\x20time
-SF:out=25\r\nlocation:\x20https://secnumacademie\.gouv\.fr/\r\nx-frame-opt
-SF:ions:\x20SAMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-conte
-SF:nt-type-options:\x20nosniff\r\nstrict-transport-security:\x20max-age=31
-SF:536000;\x20includeSubDomains\r\nconnection:\x20close\r\n\r\n<html>\r\n<
-SF:head><title>301\x20Moved\x20Permanently</title></head>\r\n<body\x20bgco
-SF:lor=\"white\">\r\n<center><h1>301\x20Moved\x20Permanently</h1></center>
-SF:\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n")%r(HTTPOption
-SF:s,22B,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nserver:\x20nginx\r\n
-SF:date:\x20Sat,\x2014\x20Sep\x202024\x2013:18:53\x20GMT\r\ncontent-type:\
-SF:x20text/html\r\ncontent-length:\x20178\r\nkeep-alive:\x20timeout=25\r\n
-SF:location:\x20https://secnumacademie\.gouv\.fr/\r\nx-frame-options:\x20S
-SF:AMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-op
-SF:tions:\x20nosniff\r\nstrict-transport-security:\x20max-age=31536000;\x2
-SF:0includeSubDomains\r\nconnection:\x20close\r\n\r\n<html>\r\n<head><titl
-SF:e>301\x20Moved\x20Permanently</title></head>\r\n<body\x20bgcolor=\"whit
-SF:e\">\r\n<center><h1>301\x20Moved\x20Permanently</h1></center>\r\n<hr><c
-SF:enter>nginx</center>\r\n</body>\r\n</html>\r\n")%r(RTSPRequest,E1,"HTTP
-SF:/1\.1\x20502\x20Bad\x20Gateway\r\ncontent-length:\x20107\r\ncache-contr
-SF:ol:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\r
-SF:\n\r\n<html><body><h1>502\x20Bad\x20Gateway</h1>\nThe\x20server\x20retu
-SF:rned\x20an\x20invalid\x20or\x20incomplete\x20response\.\n</body></html>
-SF:\n")%r(FourOhFourRequest,24E,"HTTP/1\.1\x20301\x20Moved\x20Permanently\
-SF:r\nserver:\x20nginx\r\ndate:\x20Sat,\x2014\x20Sep\x202024\x2013:18:53\x
-SF:20GMT\r\ncontent-type:\x20text/html\r\ncontent-length:\x20178\r\nkeep-a
-SF:live:\x20timeout=25\r\nlocation:\x20https://secnumacademie\.gouv\.fr/ni
-SF:ce%20ports%2C/Tri%6Eity\.txt%2ebak\r\nx-frame-options:\x20SAMEORIGIN\r\
-SF:nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20no
-SF:sniff\r\nstrict-transport-security:\x20max-age=31536000;\x20includeSubD
-SF:omains\r\nconnection:\x20close\r\n\r\n<html>\r\n<head><title>301\x20Mov
-SF:ed\x20Permanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<cen
-SF:ter><h1>301\x20Moved\x20Permanently</h1></center>\r\n<hr><center>nginx<
-SF:/center>\r\n</body>\r\n</html>\r\n");
+SF-Port80-TCP:V=7.92%I=7%D=10/14%Time=670D1DCC%P=x86_64-alpine-linux-musl%
+SF:r(GetRequest,22B,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nserver:\x
+SF:20nginx\r\ndate:\x20Mon,\x2014\x20Oct\x202024\x2013:24:54\x20GMT\r\ncon
+SF:tent-type:\x20text/html\r\ncontent-length:\x20178\r\nkeep-alive:\x20tim
+SF:eout=25\r\nlocation:\x20https://secnumacademie\.gouv\.fr/\r\nx-frame-op
+SF:tions:\x20SAMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-cont
+SF:ent-type-options:\x20nosniff\r\nstrict-transport-security:\x20max-age=3
+SF:1536000;\x20includeSubDomains\r\nconnection:\x20close\r\n\r\n<html>\r\n
+SF:<head><title>301\x20Moved\x20Permanently</title></head>\r\n<body\x20bgc
+SF:olor=\"white\">\r\n<center><h1>301\x20Moved\x20Permanently</h1></center
+SF:>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n")%r(HTTPOptio
+SF:ns,22B,"HTTP/1\.1\x20301\x20Moved\x20Permanently\r\nserver:\x20nginx\r\
+SF:ndate:\x20Mon,\x2014\x20Oct\x202024\x2013:24:54\x20GMT\r\ncontent-type:
+SF:\x20text/html\r\ncontent-length:\x20178\r\nkeep-alive:\x20timeout=25\r\
+SF:nlocation:\x20https://secnumacademie\.gouv\.fr/\r\nx-frame-options:\x20
+SF:SAMEORIGIN\r\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-o
+SF:ptions:\x20nosniff\r\nstrict-transport-security:\x20max-age=31536000;\x
+SF:20includeSubDomains\r\nconnection:\x20close\r\n\r\n<html>\r\n<head><tit
+SF:le>301\x20Moved\x20Permanently</title></head>\r\n<body\x20bgcolor=\"whi
+SF:te\">\r\n<center><h1>301\x20Moved\x20Permanently</h1></center>\r\n<hr><
+SF:center>nginx</center>\r\n</body>\r\n</html>\r\n")%r(RTSPRequest,E1,"HTT
+SF:P/1\.1\x20502\x20Bad\x20Gateway\r\ncontent-length:\x20107\r\ncache-cont
+SF:rol:\x20no-cache\r\ncontent-type:\x20text/html\r\nconnection:\x20close\
+SF:r\n\r\n<html><body><h1>502\x20Bad\x20Gateway</h1>\nThe\x20server\x20ret
+SF:urned\x20an\x20invalid\x20or\x20incomplete\x20response\.\n</body></html
+SF:>\n")%r(FourOhFourRequest,24E,"HTTP/1\.1\x20301\x20Moved\x20Permanently
+SF:\r\nserver:\x20nginx\r\ndate:\x20Mon,\x2014\x20Oct\x202024\x2013:24:54\
+SF:x20GMT\r\ncontent-type:\x20text/html\r\ncontent-length:\x20178\r\nkeep-
+SF:alive:\x20timeout=25\r\nlocation:\x20https://secnumacademie\.gouv\.fr/n
+SF:ice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nx-frame-options:\x20SAMEORIGIN\r
+SF:\nx-xss-protection:\x201;\x20mode=block\r\nx-content-type-options:\x20n
+SF:osniff\r\nstrict-transport-security:\x20max-age=31536000;\x20includeSub
+SF:Domains\r\nconnection:\x20close\r\n\r\n<html>\r\n<head><title>301\x20Mo
+SF:ved\x20Permanently</title></head>\r\n<body\x20bgcolor=\"white\">\r\n<ce
+SF:nter><h1>301\x20Moved\x20Permanently</h1></center>\r\n<hr><center>nginx
+SF:</center>\r\n</body>\r\n</html>\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=9/14%Time=66E58F5A%P=x86_64-alpine-linux
-SF:-musl%r(GetRequest,7CA5,"HTTP/1\.1\x20200\x20OK\r\nserver:\x20nginx\r\n
-SF:content-type:\x20text/html;\x20charset=UTF-8\r\ncache-control:\x20priva
-SF:te,\x20must-revalidate\r\ndate:\x20Sat,\x2014\x20Sep\x202024\x2013:18:5
-SF:9\x20GMT\r\npragma:\x20no-cache\r\nexpires:\x20-1\r\nset-cookie:\x20XSR
-SF:F-TOKEN=eyJpdiI6ImEyKzdNalBqMHFTM2UwdXZBY0NUc1E9PSIsInZhbHVlIjoiUlNNRnl
-SF:nbWRUSDE4SEo5Tmh1cmE3WUJBS214UHgxSzJiQ0dFWXN1MU5VMEtieHArZENZM0RQeW9td2
-SF:ZpR3Q2WjNablZSQWhGTGk4MzBINXVpWFlzUnZKbFRMQXhoVGNLQ1wvcWRHZHp0cWV4UFFMU
-SF:mtjVXZDYmxVNXlcL1k1bnE4YSIsIm1hYyI6IjJiNWQ2NmE2MGFiNTY0YTIzNjc4NWEyM2Qw
-SF:ZWIxOGEzODQ1ZmJjYTNiN2EwODRlYjA4NDNlNzVjZmE5MzNhYTkifQ%3D%3D;\x20expire
-SF:s=Sat,\x2014-Sep-2024\x2015:18:59\x20GMT;\x20Max-Age=7200;\x20path=/;\x
-SF:20domain=secnumacademie\.gouv\.fr;\x20secure;\x20samesite=lax\r\nset-co
-SF:okie:\x20laravel_session=eyJpdiI6ImJtbmVKcWxwOE9qbjVQTVQ4eUxMMlE9PSIsIn
-SF:ZhbHVlIjoibGVYMVFidldZM2ZvRVlpOWZkNWhnTUlWcWJrRVVOdkh1XC9CUUJJNFJhdWdyR
-SF:HpnTGpaRkdZUnBodGo4UlorOGVrRXFVM212dHBmWWI2VkhPYkxZMnZuZzRlQkNFN0NHWEpc
-SF:L2NVTWpwZTBDa1Z5XC9aa0pXRVZE")%r(HTTPOptions,19E,"HTTP/1\.1\x20405\x20N
-SF:ot\x20Allowed\r\nserver:\x20nginx\r\ndate:\x20Sat,\x2014\x20Sep\x202024
-SF:\x2013:19:00\x20GMT\r\ncontent-type:\x20text/html;\x20charset=utf-8\r\n
-SF:content-length:\x20166\r\nkeep-alive:\x20timeout=25\r\nstrict-transport
-SF:-security:\x20max-age=31536000;\x20includeSubDomains\r\nconnection:\x20
-SF:close\r\n\r\n<html>\r\n<head><title>405\x20Not\x20Allowed</title></head
-SF:>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>405\x20Not\x20Allowed</
-SF:h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n")%
-SF:r(FourOhFourRequest,1481,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\x
-SF:20nginx\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\ncache-contro
-SF:l:\x20no-cache,\x20private\r\ndate:\x20Sat,\x2014\x20Sep\x202024\x2013:
-SF:19:00\x20GMT\r\nstrict-transport-security:\x20max-age=31536000;\x20incl
-SF:udeSubDomains\r\nconnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\
-SF:x20class=\"no-js\x20before-run\"\x20lang=\"fr\">\n<head>\n\x20\x20\x20\
-SF:x20<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"X
-SF:-UA-Compatible\"\x20content=\"IE=edge\">\n\x20\x20\x20\x20<meta\x20name
-SF:=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0,\x
-SF:20user-scalable=0,\x20minimal-ui\">\n\x20\x20\x20\x20<meta\x20name=\"de
-SF:scription\"\x20content=\"bootstrap\x20admin\x20template\">\n\x20\x20\x2
-SF:0\x20<meta\x20name=\"author\"\x20content=\"\">\n\n\n\x20\x20\x20\x20<ti
-SF:tle>Erreur\x20404\x20\|\x20SecNum\x20acad\xc3\xa9mie</title>\n\n\n\x20\
-SF:x20\x20\x20<!--\x20Icons\x20-->\n\x20\x20\x20\x20<link\x20rel=\"shortcu
-SF:t\x20icon\"\x20href=\"https://secnumacademie\.gouv\.fr/resources/assets
-SF:/images/favicon\.ico\">\n\n\n\x20\x20\x20\x20<!--\x20Stylesheets\x20\(c
-SF:ustom\x20or\x20modified\)\x20-->\n\x20\x20\x20\x20<link\x20rel=\"styles
-SF:heet\"\x20href=\"https://secnumacademie\.gouv\.fr/resources/assets/css/
-SF:");
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=10/14%Time=670D1DD3%P=x86_64-alpine-linu
+SF:x-musl%r(GetRequest,7CA7,"HTTP/1\.1\x20200\x20OK\r\nserver:\x20nginx\r\
+SF:ncontent-type:\x20text/html;\x20charset=UTF-8\r\ncache-control:\x20priv
+SF:ate,\x20must-revalidate\r\ndate:\x20Mon,\x2014\x20Oct\x202024\x2013:25:
+SF:00\x20GMT\r\npragma:\x20no-cache\r\nexpires:\x20-1\r\nset-cookie:\x20XS
+SF:RF-TOKEN=eyJpdiI6Ijd2KzY0bm9mNmVxUmxcL3E5dUQwREhnPT0iLCJ2YWx1ZSI6IjdXbF
+SF:hZTStnME1IdU9sRklkcFo3TXFrUm1rOEwyTzRHZGo3aHdPRENWVW9lK0gySVZQS29NbmF1a
+SF:XV1Rm5HZGxcL3l5TlFxV2pCT2x5VnNacEFNS1JwM0E3anMrb1dCOTdGMmFrVTZqTkhPdDNH
+SF:eVdBekFhZmRNVFg2YmJnMndCeiIsIm1hYyI6ImVjYjY2OTFmNjQ5NzA1ZWZmZDY4NjlmOWF
+SF:lY2U0MzFjNWEwYThjMzg0MGQwZTQ4M2VlZDBkZTMyMTI1NDg3ZTkifQ%3D%3D;\x20expir
+SF:es=Mon,\x2014-Oct-2024\x2015:25:00\x20GMT;\x20Max-Age=7200;\x20path=/;\
+SF:x20domain=secnumacademie\.gouv\.fr;\x20secure;\x20samesite=lax\r\nset-c
+SF:ookie:\x20laravel_session=eyJpdiI6IjduUzRqRFpadFlsVGMzbHM4NVwvS0hBPT0iL
+SF:CJ2YWx1ZSI6IkU5TnBTdmRydWJNR1cyRmY5MFhBenJqVmxjQUUycVVQeUVvbStWeko5dkgy
+SF:ek9wV2VaSVU3QVRKYU1lOEtMd1RjS0RLUlJiS1VFU1d1S1REeUF1V2tKRCs5OVhJcFR6RjN
+SF:kWTJNa2k3WVwvYUxNbnF6RTVZWTZi")%r(HTTPOptions,19E,"HTTP/1\.1\x20405\x20
+SF:Not\x20Allowed\r\nserver:\x20nginx\r\ndate:\x20Mon,\x2014\x20Oct\x20202
+SF:4\x2013:25:01\x20GMT\r\ncontent-type:\x20text/html;\x20charset=utf-8\r\
+SF:ncontent-length:\x20166\r\nkeep-alive:\x20timeout=25\r\nstrict-transpor
+SF:t-security:\x20max-age=31536000;\x20includeSubDomains\r\nconnection:\x2
+SF:0close\r\n\r\n<html>\r\n<head><title>405\x20Not\x20Allowed</title></hea
+SF:d>\r\n<body\x20bgcolor=\"white\">\r\n<center><h1>405\x20Not\x20Allowed<
+SF:/h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n")
+SF:%r(FourOhFourRequest,1481,"HTTP/1\.1\x20404\x20Not\x20Found\r\nserver:\
+SF:x20nginx\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\ncache-contr
+SF:ol:\x20no-cache,\x20private\r\ndate:\x20Mon,\x2014\x20Oct\x202024\x2013
+SF::25:01\x20GMT\r\nstrict-transport-security:\x20max-age=31536000;\x20inc
+SF:ludeSubDomains\r\nconnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html
+SF:\x20class=\"no-js\x20before-run\"\x20lang=\"fr\">\n<head>\n\x20\x20\x20
+SF:\x20<meta\x20charset=\"utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"
+SF:X-UA-Compatible\"\x20content=\"IE=edge\">\n\x20\x20\x20\x20<meta\x20nam
+SF:e=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0,\
+SF:x20user-scalable=0,\x20minimal-ui\">\n\x20\x20\x20\x20<meta\x20name=\"d
+SF:escription\"\x20content=\"bootstrap\x20admin\x20template\">\n\x20\x20\x
+SF:20\x20<meta\x20name=\"author\"\x20content=\"\">\n\n\n\x20\x20\x20\x20<t
+SF:itle>Erreur\x20404\x20\|\x20SecNum\x20acad\xc3\xa9mie</title>\n\n\n\x20
+SF:\x20\x20\x20<!--\x20Icons\x20-->\n\x20\x20\x20\x20<link\x20rel=\"shortc
+SF:ut\x20icon\"\x20href=\"https://secnumacademie\.gouv\.fr/resources/asset
+SF:s/images/favicon\.ico\">\n\n\n\x20\x20\x20\x20<!--\x20Stylesheets\x20\(
+SF:custom\x20or\x20modified\)\x20-->\n\x20\x20\x20\x20<link\x20rel=\"style
+SF:sheet\"\x20href=\"https://secnumacademie\.gouv\.fr/resources/assets/css
+SF:/");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sat Sep 14 13:28:04 2024 -- 1 IP address (1 host up) scanned in 29.16 seconds
+# Nmap done at Mon Oct 14 13:34:20 2024 -- 1 IP address (1 host up) scanned in 29.38 seconds
