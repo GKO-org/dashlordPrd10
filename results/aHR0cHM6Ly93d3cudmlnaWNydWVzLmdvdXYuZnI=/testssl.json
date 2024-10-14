@@ -269,7 +269,7 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "BEB519B8337AC9CED76DE0658A3AB16E"
+              "finding"      : "4AA8A0B01568DA264E4D5E3AABF94B9E"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -283,21 +283,21 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "179AB3514778BCEFA241D83668CFE49E03250777"
+              "finding"      : "4820F40AFD67F8B3A9032CBF9A09D0B16A5863D2"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "15BFF26AA5504DB63C63B917837B69CD72C8A6A626DD985F3210D402D883DEC8"
+              "finding"      : "6BA61F1B028A6CA522B9B1CEFC0B3B1D16DC06D2D149241B8C1D673BC9C1BBB8"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -345,22 +345,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "expires < 60 days (32)"
+              "severity"     : "OK",
+              "finding"      : "364 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-03-24 23:00"
+              "finding"      : "2024-10-13 22:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
-              "severity"     : "MEDIUM",
-              "finding"      : "2024-10-16 21:59"
+              "severity"     : "OK",
+              "finding"      : "2025-10-13 21:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -500,21 +500,21 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "+107 seconds from localtime"
+              "finding"      : "+128 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1726323080"
+              "finding"      : "1728915417"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "108 seconds"
+              "finding"      : "130 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -687,7 +687,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=15BFF26AA5504DB63C63B917837B69CD72C8A6A626DD985F3210D402D883DEC8"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=6BA61F1B028A6CA522B9B1CEFC0B3B1D16DC06D2D149241B8C1D673BC9C1BBB8"
           }
 ,         {
               "id"           : "LOGJAM",
@@ -1070,6 +1070,6 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "72"
+              "finding"      : "91"
           }
 ]
