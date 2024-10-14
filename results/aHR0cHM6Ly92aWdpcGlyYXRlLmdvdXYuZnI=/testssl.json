@@ -345,8 +345,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "vigipirate.gouv.fr/87.98.148.216",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "85 >= 60 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 60 days (55)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -359,7 +359,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "vigipirate.gouv.fr/87.98.148.216",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-12-08 22:59"
           }
 ,         {
@@ -507,14 +507,14 @@
               "ip"           : "vigipirate.gouv.fr/87.98.148.216",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "vigipirate.gouv.fr/87.98.148.216",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1726322031"
+              "finding"      : "1728914468"
           }
 ,         {
               "id"           : "HSTS_time",
@@ -1140,6 +1140,6 @@
               "ip"           : "vigipirate.gouv.fr/87.98.148.216",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "143"
+              "finding"      : "142"
           }
 ]
