@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln travail-emploi.gouv.fr</pre>
-<p class="lead">Sat Sep 14 13:48:32 2024 – Sat Sep 14 13:51:08 2024<br>1 hosts scanned.
+<p class="lead">Mon Oct 14 13:55:29 2024 – Mon Oct 14 13:58:11 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,7 +76,7 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>185.194.82.27</td>
+<td>185.194.83.138</td>
 <td>travail-emploi.gouv.fr</td>
 <td>2</td>
 <td>0</td>
@@ -91,8 +91,8 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#185-194-82-27"><h3 class="panel-title">185.194.82.27 - travail-emploi.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="185-194-82-27">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#185-194-83-138"><h3 class="panel-title">185.194.83.138 - travail-emploi.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="185-194-83-138">
 <h4>Hostnames</h4>
 <ul><li>travail-emploi.gouv.fr (user)</li></ul>
 <h4>Ports</h4>
@@ -111,14 +111,29 @@
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">tcpwrapped</td>
+<td title="Service">http</td>
 <td title="Product"></td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">BigIP</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">
+  FourOhFourRequest: 
+    HTTP/1.0 302 Moved Temporarily
+    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak
+    Connection: close
+    Content-Length: 0
+  GetRequest, HTTPOptions, RTSPRequest: 
+    HTTP/1.0 302 Moved Temporarily
+    Location: https:///
+    Connection: close
+    Content-Length: 0
+  SIPOptions: 
+    HTTP/1.0 302 Moved Temporarily
+    Location: https://sip:nm
+    Connection: close
+    Content-Length: 0</pre>
 </td></tr>
 <tr class="active">
 <td>113</td>
@@ -143,42 +158,52 @@
 <pre style="white-space:pre-wrap; word-wrap:break-word;">Problem with XML parsing of /evox/about</pre>
 <h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
+  FourOhFourRequest: 
+    HTTP/1.1 200 OK
+    Cache-Control: no-store, must-revalidate, no-cache
+    Pragma: no-cache
+    Connection: close
+    Content-Type: text/html
+    Content-Length: 245
+    &lt;html&gt;&lt;head&gt;&lt;title&gt;Request Rejected&lt;/title&gt;&lt;/head&gt;&lt;body&gt;The requested URL was rejected. Please consult with your administrator.&lt;br&gt;&lt;br&gt;Your support ID is: &lt;10600432825527175453&gt;&lt;br&gt;&lt;br&gt;&lt;a href='javascript:history.back();'&gt;[Go Back]&lt;/body&gt;&lt;/html&gt;
   GetRequest: 
-    HTTP/1.1 200 OK
-    Date: Sat, 14 Sep 2024 13:48:52 GMT
-    Link: &lt;http://sante.gouv.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c.css?1724920098&gt;;rel="preload";as="style"
-    X-Spip-Cache: 21600
-    X-Frame-Options: SAMEORIGIN
-    Last-Modified: Sat, 14 Sep 2024 13:48:52 GMT
-    Vary: Accept-Encoding
-    X-Content-Type-Options: nosniff
+    HTTP/1.1 400 Bad Request
+    Date: Mon, 14 Oct 2024 13:55:48 GMT
+    Content-Length: 226
+    Content-Type: text/html; charset=iso-8859-1
+    Age: 0
+    X-Cache: MISS
+    X-Cache-Hits: 0
     Connection: close
-    Content-Type: text/html; charset=utf-8
-    Set-Cookie: BIGipServerpool-dicom-portail-dares.cegedim.cloud-HTTP=!Lf4dYTzWEiaslMtWDPlD0yXzT0UGhpCeda4sjb2miAXhMZddQyTYwT65/cg+gwvlxd5aStyH72Ujpu0EEqO5/SlaUJtS; path=/; Httponly; Secure
-    Strict-Transport-Security: max-age=31536000
-    Set-Cookie: TS01f99fc7=01352d381148d4b8fb5ddeced2cfaad7c6cfd27b47259823e650126541cddc5ebbf6e9f353af2d4c0407467aebe32c9495b08a4eb0; Path=/
-    &lt;!DOCTYPE HTML&gt;
-    &lt;html class="page_sommaire ltr fr no-js" lang="fr" dir="ltr"&gt;
-    &lt;head&gt;
-    &lt;script type='text/javascript'&gt;/*&lt;![CDATA[*/(funct
+    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!Fz1Di7R7FheDnGtWDPlD0yXzT0UGhhMWxxImCqwmjVCUXExJlfy+EQ54WuTqa+7xm4WlltjwmiYmN1FCdngVyaKvak1/; path=/; Httponly; Secure
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+    &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
+    &lt;html&gt;&lt;head&gt;
+    &lt;title&gt;400 Bad Request&lt;/title&gt;
+    &lt;/head&gt;&lt;body&gt;
+    &lt;h1&gt;Bad Request&lt;/h1&gt;
+    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;&lt;/html&gt;
   HTTPOptions: 
-    HTTP/1.1 200 OK
-    Date: Sat, 14 Sep 2024 13:48:52 GMT
-    Link: &lt;http://sante.gouv.fr:443/local/cache-css/6cc13b67cc09b67aaa20923d2eac044c.css?1724920098&gt;;rel="preload";as="style"
-    X-Spip-Cache: 21600
-    X-Frame-Options: SAMEORIGIN
-    Last-Modified: Sat, 14 Sep 2024 13:48:52 GMT
-    Vary: Accept-Encoding
-    X-Content-Type-Options: nosniff
+    HTTP/1.1 400 Bad Request
+    Date: Mon, 14 Oct 2024 13:55:48 GMT
+    Content-Length: 226
+    Content-Type: text/html; charset=iso-8859-1
+    Age: 0
+    X-Cache: MISS
+    X-Cache-Hits: 0
     Connection: close
-    Content-Type: text/html; charset=utf-8
-    Set-Cookie: BIGipServerpool-dicom-portail-dares.cegedim.cloud-HTTP=!ChBpVvIPMwF1VBxWDPlD0yXzT0UGhk/EOOxbXZxQyv4vsxjYOHFxqW6DBTiZB4ufDOFR/nF9lv1glpSfMPslo3c1xdA6; path=/; Httponly; Secure
-    Strict-Transport-Security: max-age=31536000
-    Set-Cookie: TS01f99fc7=01352d38116599bfa913ea000e19f19450369e841bc777c25f1d186ed2ff1c314d3dc436d9132f7ea728294a7379413fc7241c0bef; Path=/
-    &lt;!DOCTYPE HTML&gt;
-    &lt;html class="page_sommaire ltr fr no-js" lang="fr" dir="ltr"&gt;
-    &lt;head&gt;
-    &lt;script type='text/javascript'&gt;/*&lt;![CDATA[*/(funct</pre>
+    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!iNLZUbpbfzvRWtRWDPlD0yXzT0UGhqxeieR+H0MJkON6RuOK1nJcVqwYa0RmI+BI8eNGKF2MyWYuSV3ZQAqw24TFq/3/; path=/; Httponly; Secure
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+    &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
+    &lt;html&gt;&lt;head&gt;
+    &lt;title&gt;400 Bad Request&lt;/title&gt;
+    &lt;/head&gt;&lt;body&gt;
+    &lt;h1&gt;Bad Request&lt;/h1&gt;
+    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;&lt;/html&gt;</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -198,17 +223,17 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>185.194.82.27 - travail-emploi.gouv.fr</td>
+<td>185.194.83.138 - travail-emploi.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
-<td>tcpwrapped</td>
+<td>http</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>185.194.82.27 - travail-emploi.gouv.fr</td>
+<td>185.194.83.138 - travail-emploi.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
 <td>https</td>
