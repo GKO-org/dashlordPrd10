@@ -338,8 +338,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "50 >= 30 days"
+              "severity"     : "MEDIUM",
+              "finding"      : "expires < 30 days (20)"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -352,7 +352,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
-              "severity"     : "OK",
+              "severity"     : "MEDIUM",
               "finding"      : "2024-11-04 07:04"
           }
 ,         {
@@ -500,7 +500,7 @@
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1726320446"
+              "finding"      : "1728912683"
           }
 ,         {
               "id"           : "ipv4_in_header",
@@ -1106,6 +1106,6 @@
               "ip"           : "insp.gouv.fr/46.105.203.79",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "44"
+              "finding"      : "43"
           }
 ]
