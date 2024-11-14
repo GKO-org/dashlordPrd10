@@ -199,7 +199,7 @@
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -262,7 +262,7 @@
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "30A1DDC101114328D258E016EE7F1556"
+              "finding"      : "73607AB70E34D2ECCD0E69AF1D5B30FB"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "918756A2757FF7746D974527D92C8B8332150C6C"
+              "finding"      : "4AFDFC2925304028D7C84BA90203B7FB696ADCC6"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "52D80F99C501FD94C2887412DD192163D77B33F2B58C922CCC08860C6DD0B451"
+              "finding"      : "2CE669DA5A9756D7447AC7332127F361444E02F2A2A0E77892AF27912D85DA01"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (16)"
+              "severity"     : "OK",
+              "finding"      : "334 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-03-22 23:00"
+              "finding"      : "2024-10-14 22:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2024-10-30 22:59"
+              "severity"     : "OK",
+              "finding"      : "2025-10-14 21:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -500,7 +500,7 @@
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1728913603"
+              "finding"      : "1731591947"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -680,7 +680,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=52D80F99C501FD94C2887412DD192163D77B33F2B58C922CCC08860C6DD0B451"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=2CE669DA5A9756D7447AC7332127F361444E02F2A2A0E77892AF27912D85DA01"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1063,6 +1063,6 @@
               "ip"           : "tarn-et-garonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "101"
+              "finding"      : "59"
           }
 ]
