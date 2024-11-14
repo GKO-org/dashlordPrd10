@@ -262,7 +262,7 @@
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "27CFAF212EFBF6069CB8423FEB32DB13"
+              "finding"      : "FD136919E87A85F542F0B3B805A77120"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "AFDFBCC552469FF8BA045F17F72598F7D1A70D35"
+              "finding"      : "BCDD99AB5D9D588B0C78E7BF046E83FD1C92C601"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "F6F9D05573DB9AD3AFAD27ED2617A070E44D0A196809856B2A84A5C1B82C6225"
+              "finding"      : "9DD0AEB67381E29F7A5BBB8CBBF1D731906057F250F9F90E427D93B981624D9C"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -338,22 +338,22 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (16)"
+              "severity"     : "OK",
+              "finding"      : "334 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-03-22 23:00"
+              "finding"      : "2024-10-14 22:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "2024-10-30 22:59"
+              "severity"     : "OK",
+              "finding"      : "2025-10-14 21:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -493,21 +493,21 @@
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "0 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1728914873"
+              "finding"      : "1731593559"
           }
 ,         {
               "id"           : "HTTP_headerAge",
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1 seconds"
+              "finding"      : "0 seconds"
           }
 ,         {
               "id"           : "HSTS",
@@ -557,7 +557,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "x-cache: Hit"
+              "finding"      : "x-cache: Miss"
           }
 ,         {
               "id"           : "heartbleed",
@@ -680,7 +680,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=F6F9D05573DB9AD3AFAD27ED2617A070E44D0A196809856B2A84A5C1B82C6225"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=9DD0AEB67381E29F7A5BBB8CBBF1D731906057F250F9F90E427D93B981624D9C"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1063,6 +1063,6 @@
               "ip"           : "val-doise.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "97"
+              "finding"      : "100"
           }
 ]
