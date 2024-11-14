@@ -262,7 +262,7 @@
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "3284B0E21BB590AEC4BE8807A30F57B3"
+              "finding"      : "19AC172BCBE87A873D9BF52646494B54"
           }
 ,         {
               "id"           : "cert_serialNumberLen",
@@ -276,21 +276,21 @@
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "B4BF7ADBC8FD18BD1775FE5E37A1CE13644524EA"
+              "finding"      : "D3FCBECE63FC0CD43B394F8FE1813E9C116EA32E"
           }
 ,         {
               "id"           : "cert_fingerprintSHA256",
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "9B8CBB93FA711B3DAEAC1045D3663895B06E56CA0A8EEF73EE7502534A58DA3D"
+              "finding"      : "F6ADFDDADC1A523752C563FB6083E298DD505590B84E86DD6D1D275021F57A07"
           }
 ,         {
               "id"           : "cert",
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
+              "finding"      : "-----BEGIN CERTIFICATE-----\n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\n-----END CERTIFICATE-----"
           }
 ,         {
               "id"           : "cert_commonName",
@@ -339,21 +339,21 @@
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "79 >= 60 days"
+              "finding"      : "362 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "2024-03-21 23:00"
+              "finding"      : "2024-11-11 23:00"
           }
 ,         {
               "id"           : "cert_notAfter",
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "2025-01-01 22:59"
+              "finding"      : "2025-11-11 22:59"
           }
 ,         {
               "id"           : "cert_extlifeSpan",
@@ -381,7 +381,7 @@
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "http://servicesca.ocsp.dhimyotis.com http://servicesca.ocsp.certigna.fr"
+              "finding"      : "http://servicesca.ocsp.certigna.fr http://servicesca.ocsp.dhimyotis.com"
           }
 ,         {
               "id"           : "OCSP_stapling",
@@ -500,7 +500,7 @@
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1728915724"
+              "finding"      : "1731594323"
           }
 ,         {
               "id"           : "HTTP_headerAge",
@@ -557,7 +557,7 @@
               "port"         : "443",
               "severity"     : "INFO",
               "cwe"          : "CWE-200",
-              "finding"      : "x-cache: Miss"
+              "finding"      : "x-cache: Hit"
           }
 ,         {
               "id"           : "heartbleed",
@@ -680,7 +680,7 @@
               "severity"     : "INFO",
               "cve"          : "CVE-2016-0800 CVE-2016-0703",
               "cwe"          : "CWE-310",
-              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=9B8CBB93FA711B3DAEAC1045D3663895B06E56CA0A8EEF73EE7502534A58DA3D"
+              "finding"      : "Make sure you don't use this certificate elsewhere with SSLv2 enabled services, see https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=F6ADFDDADC1A523752C563FB6083E298DD505590B84E86DD6D1D275021F57A07"
           }
 ,         {
               "id"           : "LOGJAM-common_primes",
@@ -1063,6 +1063,6 @@
               "ip"           : "yonne.gouv.fr/77.159.252.140",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "55"
+              "finding"      : "57"
           }
 ]
