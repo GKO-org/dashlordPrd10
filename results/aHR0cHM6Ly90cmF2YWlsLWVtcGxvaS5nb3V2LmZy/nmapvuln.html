@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln travail-emploi.gouv.fr</pre>
-<p class="lead">Mon Oct 14 13:55:29 2024 – Mon Oct 14 13:58:11 2024<br>1 hosts scanned.
+<p class="lead">Thu Nov 14 14:00:01 2024 – Thu Nov 14 14:02:51 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -119,19 +119,9 @@
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">
-  FourOhFourRequest: 
-    HTTP/1.0 302 Moved Temporarily
-    Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak
-    Connection: close
-    Content-Length: 0
-  GetRequest, HTTPOptions, RTSPRequest: 
+  GetRequest, HTTPOptions: 
     HTTP/1.0 302 Moved Temporarily
     Location: https:///
-    Connection: close
-    Content-Length: 0
-  SIPOptions: 
-    HTTP/1.0 302 Moved Temporarily
-    Location: https://sip:nm
     Connection: close
     Content-Length: 0</pre>
 </td></tr>
@@ -165,17 +155,17 @@
     Connection: close
     Content-Type: text/html
     Content-Length: 245
-    &lt;html&gt;&lt;head&gt;&lt;title&gt;Request Rejected&lt;/title&gt;&lt;/head&gt;&lt;body&gt;The requested URL was rejected. Please consult with your administrator.&lt;br&gt;&lt;br&gt;Your support ID is: &lt;10600432825527175453&gt;&lt;br&gt;&lt;br&gt;&lt;a href='javascript:history.back();'&gt;[Go Back]&lt;/body&gt;&lt;/html&gt;
-  GetRequest: 
+    &lt;html&gt;&lt;head&gt;&lt;title&gt;Request Rejected&lt;/title&gt;&lt;/head&gt;&lt;body&gt;The requested URL was rejected. Please consult with your administrator.&lt;br&gt;&lt;br&gt;Your support ID is: &lt;10600432829030188621&gt;&lt;br&gt;&lt;br&gt;&lt;a href='javascript:history.back();'&gt;[Go Back]&lt;/body&gt;&lt;/html&gt;
+  HTTPOptions: 
     HTTP/1.1 400 Bad Request
-    Date: Mon, 14 Oct 2024 13:55:48 GMT
+    Date: Thu, 14 Nov 2024 14:00:26 GMT
     Content-Length: 226
     Content-Type: text/html; charset=iso-8859-1
     Age: 0
     X-Cache: MISS
     X-Cache-Hits: 0
     Connection: close
-    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!Fz1Di7R7FheDnGtWDPlD0yXzT0UGhhMWxxImCqwmjVCUXExJlfy+EQ54WuTqa+7xm4WlltjwmiYmN1FCdngVyaKvak1/; path=/; Httponly; Secure
+    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!vQqOGgUf1mUyW69WDPlD0yXzT0UGhj6Qdhdgp5ozxt9xFDrWb4brHnxXr6HOyQtGyjpfW1zMXXZTRDB7CUwVS6OHB5XO; path=/; Httponly; Secure
     Strict-Transport-Security: max-age=31536000; includeSubDomains
     &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
     &lt;html&gt;&lt;head&gt;
@@ -185,25 +175,16 @@
     &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
     &lt;/p&gt;
     &lt;/body&gt;&lt;/html&gt;
-  HTTPOptions: 
+  RTSPRequest: 
     HTTP/1.1 400 Bad Request
-    Date: Mon, 14 Oct 2024 13:55:48 GMT
-    Content-Length: 226
-    Content-Type: text/html; charset=iso-8859-1
-    Age: 0
-    X-Cache: MISS
-    X-Cache-Hits: 0
     Connection: close
-    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!iNLZUbpbfzvRWtRWDPlD0yXzT0UGhqxeieR+H0MJkON6RuOK1nJcVqwYa0RmI+BI8eNGKF2MyWYuSV3ZQAqw24TFq/3/; path=/; Httponly; Secure
+    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!DPMF557inNOjJphWDPlD0yXzT0UGhk3gB8zSnZKB1lf6sCteiPGs4n45IXOJhP5+zNJDInIXZrCn8NV+3yTyPjsDab+N; path=/; Httponly; Secure
     Strict-Transport-Security: max-age=31536000; includeSubDomains
-    &lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
-    &lt;html&gt;&lt;head&gt;
-    &lt;title&gt;400 Bad Request&lt;/title&gt;
-    &lt;/head&gt;&lt;body&gt;
-    &lt;h1&gt;Bad Request&lt;/h1&gt;
-    &lt;p&gt;Your browser sent a request that this server could not understand.&lt;br /&gt;
-    &lt;/p&gt;
-    &lt;/body&gt;&lt;/html&gt;</pre>
+  SIPOptions: 
+    HTTP/1.1 400 Bad Request
+    Connection: close
+    Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!PC0wVFf8WhNxz/VWDPlD0yXzT0UGhi31i3vqmOaM9r8XJN/tLO490eph/v8UrZHAGm7OTV8Qpy4bYmbA0BajJTaYVSrN; path=/; Httponly; Secure
+    Strict-Transport-Security: max-age=31536000; includeSubDomains</pre>
 </td></tr>
 </tbody>
 </table></div>
