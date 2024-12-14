@@ -1,18 +1,27 @@
-# Nmap 7.92 scan initiated Thu Nov 14 14:00:01 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln travail-emploi.gouv.fr
+# Nmap 7.92 scan initiated Sat Dec 14 14:14:17 2024 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln travail-emploi.gouv.fr
 Nmap scan report for travail-emploi.gouv.fr (185.194.83.138)
-Host is up (0.096s latency).
+Host is up (0.081s latency).
 Not shown: 997 filtered tcp ports (no-response)
 PORT    STATE  SERVICE   VERSION
 80/tcp  open   http
 | fingerprint-strings: 
-|   GetRequest, HTTPOptions: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 302 Moved Temporarily
+|     Location: https:///nice%20ports%2C/Tri%6Eity.txt%2ebak
+|     Connection: close
+|     Content-Length: 0
+|   GetRequest, HTTPOptions, RTSPRequest: 
 |     HTTP/1.0 302 Moved Temporarily
 |     Location: https:///
+|     Connection: close
+|     Content-Length: 0
+|   SIPOptions: 
+|     HTTP/1.0 302 Moved Temporarily
+|     Location: https://sip:nm
 |     Connection: close
 |_    Content-Length: 0
 113/tcp closed ident
 443/tcp open   ssl/https
-|_http-trane-info: Problem with XML parsing of /evox/about
 | fingerprint-strings: 
 |   FourOhFourRequest: 
 |     HTTP/1.1 200 OK
@@ -21,17 +30,20 @@ PORT    STATE  SERVICE   VERSION
 |     Connection: close
 |     Content-Type: text/html
 |     Content-Length: 245
-|     <html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: <10600432829030188621><br><br><a href='javascript:history.back();'>[Go Back]</body></html>
-|   HTTPOptions: 
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     <html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: <10853012110685152167><br><br><a href='javascript:history.back();'>[Go Back]</body></html>
+|   GetRequest: 
 |     HTTP/1.1 400 Bad Request
-|     Date: Thu, 14 Nov 2024 14:00:26 GMT
+|     Date: Sat, 14 Dec 2024 14:14:36 GMT
 |     Content-Length: 226
 |     Content-Type: text/html; charset=iso-8859-1
 |     Age: 0
 |     X-Cache: MISS
 |     X-Cache-Hits: 0
 |     Connection: close
-|     Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!vQqOGgUf1mUyW69WDPlD0yXzT0UGhj6Qdhdgp5ozxt9xFDrWb4brHnxXr6HOyQtGyjpfW1zMXXZTRDB7CUwVS6OHB5XO; path=/; Httponly; Secure
+|     Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!mPPUdGTAjhpqdYVEb0fFdwp3a2v5lukQLhBnoOJnLxWU53Aa4BLRy8/TO+6fAfgOs9XLT8/pHi0Xn1uxRBPPu0oB3Mbz; path=/; Httponly; Secure
 |     Strict-Transport-Security: max-age=31536000; includeSubDomains
 |     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 |     <html><head>
@@ -41,55 +53,77 @@ PORT    STATE  SERVICE   VERSION
 |     <p>Your browser sent a request that this server could not understand.<br />
 |     </p>
 |     </body></html>
-|   RTSPRequest: 
+|   HTTPOptions: 
 |     HTTP/1.1 400 Bad Request
+|     Date: Sat, 14 Dec 2024 14:14:37 GMT
+|     Content-Range: bytes */0
+|     Content-Length: 226
+|     Content-Type: text/html; charset=iso-8859-1
+|     Age: 0
+|     X-Cache: MISS
+|     X-Cache-Hits: 0
 |     Connection: close
-|     Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!DPMF557inNOjJphWDPlD0yXzT0UGhk3gB8zSnZKB1lf6sCteiPGs4n45IXOJhP5+zNJDInIXZrCn8NV+3yTyPjsDab+N; path=/; Httponly; Secure
+|     Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!kYd+o5v+EfQmLQVEb0fFdwp3a2v5lnVWczfNetMJa/D16gvHIJe7h0fTsEEa5NEmuMEMXBHTCHLQprmaUeRKoNw+mnTG; path=/; Httponly; Secure
 |     Strict-Transport-Security: max-age=31536000; includeSubDomains
-|   SIPOptions: 
-|     HTTP/1.1 400 Bad Request
-|     Connection: close
-|     Set-Cookie: BIGipServerpool-travail-production.cegedim.cloud-TCP80=!PC0wVFf8WhNxz/VWDPlD0yXzT0UGhi31i3vqmOaM9r8XJN/tLO490eph/v8UrZHAGm7OTV8Qpy4bYmbA0BajJTaYVSrN; path=/; Httponly; Secure
-|_    Strict-Transport-Security: max-age=31536000; includeSubDomains
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|_    </body></html>
+|_http-trane-info: Problem with XML parsing of /evox/about
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.92%I=7%D=11/14%Time=6736026F%P=x86_64-alpine-linux-musl%
+SF-Port80-TCP:V=7.92%I=7%D=12/14%Time=675D92C6%P=x86_64-alpine-linux-musl%
 SF:r(GetRequest,5D,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation:\
 SF:x20https:///\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n")%
 SF:r(HTTPOptions,5D,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation:
-SF:\x20https:///\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n");
+SF:\x20https:///\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n")
+SF:%r(RTSPRequest,5D,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nLocation
+SF::\x20https:///\r\nConnection:\x20close\r\nContent-Length:\x200\r\n\r\n"
+SF:)%r(FourOhFourRequest,80,"HTTP/1\.0\x20302\x20Moved\x20Temporarily\r\nL
+SF:ocation:\x20https:///nice%20ports%2C/Tri%6Eity\.txt%2ebak\r\nConnection
+SF::\x20close\r\nContent-Length:\x200\r\n\r\n")%r(SIPOptions,62,"HTTP/1\.0
+SF:\x20302\x20Moved\x20Temporarily\r\nLocation:\x20https://sip:nm\r\nConne
+SF:ction:\x20close\r\nContent-Length:\x200\r\n\r\n");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port443-TCP:V=7.92%T=SSL%I=7%D=11/14%Time=6736027A%P=x86_64-alpine-linu
-SF:x-musl%r(HTTPOptions,29C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x
-SF:20Thu,\x2014\x20Nov\x202024\x2014:00:26\x20GMT\r\nContent-Length:\x2022
-SF:6\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\nAge:\x200\r\n
-SF:X-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nConnection:\x20close\r\nSet-C
-SF:ookie:\x20BIGipServerpool-travail-production\.cegedim\.cloud-TCP80=!vQq
-SF:OGgUf1mUyW69WDPlD0yXzT0UGhj6Qdhdgp5ozxt9xFDrWb4brHnxXr6HOyQtGyjpfW1zMXX
-SF:ZTRDB7CUwVS6OHB5XO;\x20path=/;\x20Httponly;\x20Secure\r\nStrict-Transpo
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=12/14%Time=675D92CC%P=x86_64-alpine-linu
+SF:x-musl%r(GetRequest,29C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x2
+SF:0Sat,\x2014\x20Dec\x202024\x2014:14:36\x20GMT\r\nContent-Length:\x20226
+SF:\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\nAge:\x200\r\nX
+SF:-Cache:\x20MISS\r\nX-Cache-Hits:\x200\r\nConnection:\x20close\r\nSet-Co
+SF:okie:\x20BIGipServerpool-travail-production\.cegedim\.cloud-TCP80=!mPPU
+SF:dGTAjhpqdYVEb0fFdwp3a2v5lukQLhBnoOJnLxWU53Aa4BLRy8/TO\+6fAfgOs9XLT8/pHi
+SF:0Xn1uxRBPPu0oB3Mbz;\x20path=/;\x20Httponly;\x20Secure\r\nStrict-Transpo
 SF:rt-Security:\x20max-age=31536000;\x20includeSubDomains\r\n\r\n<!DOCTYPE
 SF:\x20HTML\x20PUBLIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">\n<html><hea
 SF:d>\n<title>400\x20Bad\x20Request</title>\n</head><body>\n<h1>Bad\x20Req
 SF:uest</h1>\n<p>Your\x20browser\x20sent\x20a\x20request\x20that\x20this\x
 SF:20server\x20could\x20not\x20understand\.<br\x20/>\n</p>\n</body></html>
-SF:\n")%r(FourOhFourRequest,18F,"HTTP/1\.1\x20200\x20OK\r\nCache-Control:\
-SF:x20no-store,\x20must-revalidate,\x20no-cache\r\nPragma:\x20no-cache\r\n
-SF:Connection:\x20close\r\nContent-Type:\x20text/html\r\nContent-Length:\x
-SF:20245\r\n\r\n<html><head><title>Request\x20Rejected</title></head><body
-SF:>The\x20requested\x20URL\x20was\x20rejected\.\x20Please\x20consult\x20w
-SF:ith\x20your\x20administrator\.<br><br>Your\x20support\x20ID\x20is:\x20<
-SF:10600432829030188621><br><br><a\x20href='javascript:history\.back\(\);'
-SF:>\[Go\x20Back\]</body></html>")%r(RTSPRequest,12B,"HTTP/1\.1\x20400\x20
-SF:Bad\x20Request\r\nConnection:\x20close\r\nSet-Cookie:\x20BIGipServerpoo
-SF:l-travail-production\.cegedim\.cloud-TCP80=!DPMF557inNOjJphWDPlD0yXzT0U
-SF:Ghk3gB8zSnZKB1lf6sCteiPGs4n45IXOJhP5\+zNJDInIXZrCn8NV\+3yTyPjsDab\+N;\x
-SF:20path=/;\x20Httponly;\x20Secure\r\nStrict-Transport-Security:\x20max-a
-SF:ge=31536000;\x20includeSubDomains\r\n\r\n")%r(SIPOptions,12B,"HTTP/1\.1
-SF:\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nSet-Cookie:\x20BIG
-SF:ipServerpool-travail-production\.cegedim\.cloud-TCP80=!PC0wVFf8WhNxz/VW
-SF:DPlD0yXzT0UGhi31i3vqmOaM9r8XJN/tLO490eph/v8UrZHAGm7OTV8Qpy4bYmbA0BajJTa
-SF:YVSrN;\x20path=/;\x20Httponly;\x20Secure\r\nStrict-Transport-Security:\
-SF:x20max-age=31536000;\x20includeSubDomains\r\n\r\n");
+SF:\n")%r(HTTPOptions,2B6,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20
+SF:Sat,\x2014\x20Dec\x202024\x2014:14:37\x20GMT\r\nContent-Range:\x20bytes
+SF:\x20\*/0\r\nContent-Length:\x20226\r\nContent-Type:\x20text/html;\x20ch
+SF:arset=iso-8859-1\r\nAge:\x200\r\nX-Cache:\x20MISS\r\nX-Cache-Hits:\x200
+SF:\r\nConnection:\x20close\r\nSet-Cookie:\x20BIGipServerpool-travail-prod
+SF:uction\.cegedim\.cloud-TCP80=!kYd\+o5v\+EfQmLQVEb0fFdwp3a2v5lnVWczfNetM
+SF:Ja/D16gvHIJe7h0fTsEEa5NEmuMEMXBHTCHLQprmaUeRKoNw\+mnTG;\x20path=/;\x20H
+SF:ttponly;\x20Secure\r\nStrict-Transport-Security:\x20max-age=31536000;\x
+SF:20includeSubDomains\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//IETF//DT
+SF:D\x20HTML\x202\.0//EN\">\n<html><head>\n<title>400\x20Bad\x20Request</t
+SF:itle>\n</head><body>\n<h1>Bad\x20Request</h1>\n<p>Your\x20browser\x20se
+SF:nt\x20a\x20request\x20that\x20this\x20server\x20could\x20not\x20underst
+SF:and\.<br\x20/>\n</p>\n</body></html>\n")%r(FourOhFourRequest,1EE,"HTTP/
+SF:1\.1\x20200\x20OK\r\nCache-Control:\x20no-store,\x20must-revalidate,\x2
+SF:0no-cache\r\nPragma:\x20no-cache\r\nConnection:\x20close\r\nContent-Typ
+SF:e:\x20text/html\r\nContent-Length:\x20245\r\nX-Frame-Options:\x20SAMEOR
+SF:IGIN\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options
+SF::\x20nosniff\r\n\r\n<html><head><title>Request\x20Rejected</title></hea
+SF:d><body>The\x20requested\x20URL\x20was\x20rejected\.\x20Please\x20consu
+SF:lt\x20with\x20your\x20administrator\.<br><br>Your\x20support\x20ID\x20i
+SF:s:\x20<10853012110685152167><br><br><a\x20href='javascript:history\.bac
+SF:k\(\);'>\[Go\x20Back\]</body></html>");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Nov 14 14:02:51 2024 -- 1 IP address (1 host up) scanned in 170.26 seconds
+# Nmap done at Sat Dec 14 14:17:00 2024 -- 1 IP address (1 host up) scanned in 163.41 seconds
