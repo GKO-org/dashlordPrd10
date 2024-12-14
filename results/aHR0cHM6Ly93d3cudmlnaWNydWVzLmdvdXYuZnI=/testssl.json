@@ -346,7 +346,7 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "OK",
-              "finding"      : "333 >= 60 days"
+              "finding"      : "303 >= 60 days"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -500,14 +500,14 @@
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "-1 seconds from localtime"
+              "finding"      : "+2 seconds from localtime"
           }
 ,         {
               "id"           : "HTTP_headerTime",
               "ip"           : "www.vigicrues.gouv.fr/37.235.89.99",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "1731593992"
+              "finding"      : "1734187126"
           }
 ,         {
               "id"           : "HTTP_headerAge",
