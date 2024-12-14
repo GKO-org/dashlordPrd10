@@ -199,7 +199,7 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'status request/#5' 'key share/#51' 'supported versions/#43' 'extended master secret/#23'"
+              "finding"      : "'server name/#0' 'renegotiation info/#65281' 'EC point formats/#11' 'session ticket/#35' 'key share/#51' 'supported versions/#43' 'extended master secret/#23'"
           }
 ,         {
               "id"           : "TLS_session_ticket",
@@ -227,7 +227,7 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "not supported"
+              "finding"      : "supported"
           }
 ,         {
               "id"           : "TLS_timestamp",
@@ -352,8 +352,8 @@
               "id"           : "cert_chain_of_trust",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "passed."
+              "severity"     : "CRITICAL",
+              "finding"      : "failed (expired)."
           }
 ,         {
               "id"           : "cert_certificatePolicies_EV",
@@ -366,8 +366,8 @@
               "id"           : "cert_expirationStatus",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
-              "severity"     : "HIGH",
-              "finding"      : "expires < 30 days (23)"
+              "severity"     : "CRITICAL",
+              "finding"      : "expired"
           }
 ,         {
               "id"           : "cert_notBefore",
@@ -380,7 +380,7 @@
               "id"           : "cert_notAfter",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
-              "severity"     : "HIGH",
+              "severity"     : "CRITICAL",
               "finding"      : "2024-12-07 23:59"
           }
 ,         {
@@ -415,15 +415,8 @@
               "id"           : "OCSP_stapling",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
-              "severity"     : "OK",
-              "finding"      : "offered"
-          }
-,         {
-              "id"           : "cert_ocspRevoked",
-              "ip"           : "voeux2022.gouv.fr/217.70.184.55",
-              "port"         : "443",
-              "severity"     : "CRITICAL",
-              "finding"      : "revoked"
+              "severity"     : "LOW",
+              "finding"      : "not offered"
           }
 ,         {
               "id"           : "cert_mustStapleExtension",
@@ -1077,10 +1070,17 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "Grade capped to T. Certificate revoked"
+              "finding"      : "Grade capped to T. Issues with the chain of trust (expired)"
           }
 ,         {
               "id"           : "grade_cap_reason_2",
+              "ip"           : "voeux2022.gouv.fr/217.70.184.55",
+              "port"         : "443",
+              "severity"     : "INFO",
+              "finding"      : "Grade capped to T. Certificate expired"
+          }
+,         {
+              "id"           : "grade_cap_reason_3",
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
@@ -1091,6 +1091,6 @@
               "ip"           : "voeux2022.gouv.fr/217.70.184.55",
               "port"         : "443",
               "severity"     : "INFO",
-              "finding"      : "59"
+              "finding"      : "55"
           }
 ]
