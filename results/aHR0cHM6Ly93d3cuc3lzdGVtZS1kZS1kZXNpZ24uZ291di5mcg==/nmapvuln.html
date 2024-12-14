@@ -54,7 +54,7 @@
 <h1>Scan Report<br><small>Nmap 7.92</small>
 </h1>
 <pre style="white-space:pre-wrap; word-wrap:break-word;">nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln www.systeme-de-design.gouv.fr</pre>
-<p class="lead">Thu Nov 14 13:39:57 2024 – Thu Nov 14 13:42:29 2024<br>1 hosts scanned.
+<p class="lead">Sat Dec 14 13:53:04 2024 – Sat Dec 14 13:53:22 2024<br>1 hosts scanned.
               1 hosts up.
               0 hosts down.
             </p>
@@ -76,9 +76,9 @@
 </tr></thead>
 <tbody><tr>
 <td><span class="label label-success">up</span></td>
-<td>160.92.148.78</td>
+<td>172.64.80.1</td>
 <td>www.systeme-de-design.gouv.fr</td>
-<td>2</td>
+<td>4</td>
 <td>0</td>
 </tr></tbody>
 </table></div>
@@ -91,13 +91,10 @@
             });
           </script><h2 id="onlinehosts" class="target">Online Hosts</h2>
 <div class="panel panel-default">
-<div class="panel-heading clickable" data-toggle="collapse" data-target="#160-92-148-78"><h3 class="panel-title">160.92.148.78 - www.systeme-de-design.gouv.fr</h3></div>
-<div class="panel-body collapse in" id="160-92-148-78">
+<div class="panel-heading clickable" data-toggle="collapse" data-target="#172-64-80-1"><h3 class="panel-title">172.64.80.1 - www.systeme-de-design.gouv.fr</h3></div>
+<div class="panel-body collapse in" id="172-64-80-1">
 <h4>Hostnames</h4>
-<ul>
-<li>www.systeme-de-design.gouv.fr (user)</li>
-<li>secure-ssl-dsaf-mutu-prod.as8677.net (PTR)</li>
-</ul>
+<ul><li>www.systeme-de-design.gouv.fr (user)</li></ul>
 <h4>Ports</h4>
 <div class="table-responsive"><table class="table table-bordered">
 <thead><tr>
@@ -114,80 +111,53 @@
 <td title="Port">80</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">http-proxy</td>
-<td title="Product">F5 BIG-IP load balancer http proxy</td>
+<td title="Service">http</td>
+<td title="Product">Cloudflare http proxy</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
 <a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">BigIP</pre>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">cloudflare</pre>
 </td></tr>
 <tr class="success">
 <td title="Port">443</td>
 <td title="Protocol">tcp</td>
 <td title="State / Reason">open<br>syn-ack</td>
-<td title="Service">https</td>
-<td title="Product"></td>
+<td title="Service">http</td>
+<td title="Product">Cloudflare http proxy</td>
 <td title="Version"></td>
 <td title="Extra Info"></td>
 </tr>
 <tr><td colspan="7">
-<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>fingerprint-strings</h5>
-<pre style="white-space:pre-wrap; word-wrap:break-word;">
-  GetRequest: 
-    HTTP/1.1 200 OK
-    Date: Thu, 14 Nov 2024 13:40:13 GMT
-    Content-Type: text/html
-    Content-Length: 22202
-    Connection: close
-    X-Frame-Options: SAMEORIGIN
-    X-Content-Type-Options: nosniff
-    X-Xss-Protection: 1; mode=block
-    Last-Modified: Mon, 28 Oct 2024 16:13:22 GMT
-    ETag: "56ba-6258bbf64cc80"
-    X-Varnish: 9694018
-    Age: 0
-    X-Cache: MISS
-    X-Cache-Hits: 0
-    Accept-Ranges: bytes
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang="fr" dir="ltr"&gt;
-    &lt;head&gt;
-    &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
-    &lt;meta name="twitter:description" content="L'acad
-    renseignement"/&gt;
-    &lt;meta property="og:url" content="http://www.academie-renseignement.gouv.fr/"/&gt;
-    &lt;meta property="og:title" content="L'acad
-    renseignement"/&gt;
-    &lt;meta property="og:image" content="http://www.academie-renseignement.gouv.fr/img/logo.png"/&gt;
-    &lt;meta property="og:type" content="website"/&gt;
-    &lt;meta proper
-  HTTPOptions: 
-    HTTP/1.1 403 Forbidden
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    X-Content-Type-Options: nosniff
-    Cache-Control: no-cache
-    Connection: close
-    Content-Security-Policy: default-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';
-    Content-Type: text/html; charset=utf-8
-    Pragma: no-cache
-    Strict-Transport-Security: max-age=31536000; includeSubDomains
-    X-Blocked: yes
-    Content-Length: 9839
-    &lt;!doctype html&gt;
-    &lt;html lang="fr"&gt;
-    &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
-    &lt;title&gt;Erreur serveur&lt;/title&gt;
-    &lt;style&gt;
-    DSFR v1.6.0 | SPDX-License-Identifier: MIT | License-Filename: LICENSE.md | restricted use (see terms and conditions)
-    @charset "UTF-8";
-    CONNECT
-    html {
-    height: 100%;</pre>
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">cloudflare</pre>
+</td></tr>
+<tr class="success">
+<td title="Port">8080</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">Cloudflare http proxy</td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">cloudflare</pre>
+</td></tr>
+<tr class="success">
+<td title="Port">8443</td>
+<td title="Protocol">tcp</td>
+<td title="State / Reason">open<br>syn-ack</td>
+<td title="Service">http</td>
+<td title="Product">Cloudflare http proxy</td>
+<td title="Version"></td>
+<td title="Extra Info"></td>
+</tr>
+<tr><td colspan="7">
+<a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;cves=on&amp;cpe_version="></a><h5>http-server-header</h5>
+<pre style="white-space:pre-wrap; word-wrap:break-word;">cloudflare</pre>
 </td></tr>
 </tbody>
 </table></div>
@@ -207,21 +177,41 @@
 </tr></thead>
 <tbody>
 <tr>
-<td>160.92.148.78 - www.systeme-de-design.gouv.fr</td>
+<td>172.64.80.1 - www.systeme-de-design.gouv.fr</td>
 <td>80</td>
 <td>tcp</td>
-<td>http-proxy</td>
-<td>F5 BIG-IP load balancer http proxy</td>
+<td>http</td>
+<td>Cloudflare http proxy</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>160.92.148.78 - www.systeme-de-design.gouv.fr</td>
+<td>172.64.80.1 - www.systeme-de-design.gouv.fr</td>
 <td>443</td>
 <td>tcp</td>
-<td>https</td>
+<td>http</td>
+<td>Cloudflare http proxy</td>
 <td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>172.64.80.1 - www.systeme-de-design.gouv.fr</td>
+<td>8080</td>
+<td>tcp</td>
+<td>http</td>
+<td>Cloudflare http proxy</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>172.64.80.1 - www.systeme-de-design.gouv.fr</td>
+<td>8443</td>
+<td>tcp</td>
+<td>http</td>
+<td>Cloudflare http proxy</td>
 <td></td>
 <td></td>
 <td></td>
