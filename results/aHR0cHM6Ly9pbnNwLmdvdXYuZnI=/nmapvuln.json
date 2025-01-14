@@ -1,1 +1,1 @@
-{"host":"insp.gouv.fr","protocol":"tcp","closed_ports":"998","open_ports":[{"service":{"name":"http","id":"80","vulnerabilities":[]}},{"service":{"name":"https","id":"443","vulnerabilities":[]}}],"grade":"A"}
+{"host":"insp.gouv.fr","protocol":"tcp","closed_ports":"998","open_ports":[{"service":{"name":"http","product":"nginx","id":"80","version":"1.27.2","vulnerabilities":[]}},{"service":{"name":"http","product":"nginx","id":"443","version":"1.27.2","vulnerabilities":[]}}],"grade":"A"}
