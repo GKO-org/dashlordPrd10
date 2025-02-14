@@ -9,8 +9,3 @@
 "TLS1_3","stationnement.gouv.fr/185.8.53.118","443","OK","offered with final","",""
 "ALPN","stationnement.gouv.fr/185.8.53.118","443","INFO","not offered","",""
 "cipherlist_NULL","stationnement.gouv.fr/185.8.53.118","443","OK","not offered","","CWE-327"
-"cipherlist_aNULL","stationnement.gouv.fr/185.8.53.118","443","OK","not offered","","CWE-327"
-"cipherlist_EXPORT","stationnement.gouv.fr/185.8.53.118","443","OK","not offered","","CWE-327"
-"cipherlist_LOW","stationnement.gouv.fr/185.8.53.118","443","OK","not offered","","CWE-327"
-"cipherlist_3DES_IDEA","stationnement.gouv.fr/185.8.53.118","443","INFO","not offered","","CWE-310"
-"cipherlist_OBSOLETED","stationnement.gouv.fr/185.8.53.118","443","INFO","not offered","","CWE-310"
