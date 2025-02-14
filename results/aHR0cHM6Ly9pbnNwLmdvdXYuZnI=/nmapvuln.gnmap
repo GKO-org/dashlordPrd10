@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Tue Jan 14 13:33:11 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln insp.gouv.fr
+# Nmap 7.92 scan initiated Fri Feb 14 13:32:47 2025 as: nmap -sV --script vulners --script-args mincvss=5.0 -oA /data/nmapvuln insp.gouv.fr
 Host: 80.87.226.59 (svr226059.actimage.net)	Status: Up
 Host: 80.87.226.59 (svr226059.actimage.net)	Ports: 80/open/tcp//http//nginx 1.27.2/, 443/open/tcp//ssl|http//nginx 1.27.2/	Ignored State: filtered (998)
-# Nmap done at Tue Jan 14 13:33:36 2025 -- 1 IP address (1 host up) scanned in 24.79 seconds
+# Nmap done at Fri Feb 14 13:33:15 2025 -- 1 IP address (1 host up) scanned in 28.77 seconds
